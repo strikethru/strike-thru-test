@@ -1,0 +1,79 @@
+body{
+    &.wrap{
+        &-addeditproducts,
+        &-pricepromotions,
+        &-shippingpromotions,
+        &-manageproducts,
+        &-pricing,
+        &-completedorders,
+        &-openorders,
+        &-cancelledorders,
+        &-manageinventory,
+        &-brands,
+        &-warehouses{
+            background-color: #FAFAFA;
+            .content-box{
+                background-color: #FAFAFA;
+            }
+            .content-panel{
+                &.pg-addeditproducts,
+                &.pg-pricepromotions,
+                &.pg-shippingpromotions,
+                &.pg-manageproducts,
+                &.pg-pricing,
+                &.pg-completedorders,
+                &.pg-openorders,
+                &.pg-cancelledorders,
+                &.pg-manageinventory,
+                &.pg-brands,
+                &.pg-warehouses{
+                    background-color: transparent;
+                    h1{
+                        background-color: transparent;
+                    }
+                }
+                &.pg-pricepromotions,
+                &.pg-shippingpromotions,
+                &.pg-manageproducts,
+                &.pg-pricing,
+                &.pg-completedorders,
+                &.pg-openorders,
+                &.pg-cancelledorders,
+                &.pg-manageinventory,
+                &.pg-brands,
+                &.pg-warehouses{
+                    .manage-products{
+                        background-color: transparent;
+                        .nav-pills{
+                            background-color: transparent;
+                            .show > .nav-link,
+                            .nav-link{
+                                background-color: transparent;
+                                &.active{
+                                    //background-color: #fff;
+                                    background-color: transparent;
+                                }
+                            }
+                        }
+                    }
+                }
+                &.pg-manageproducts,
+                &.pg-manageinventory,
+                &.pg-brands,
+                &.pg-warehouses{
+                    .btn-panel{
+                        background-color: transparent;
+                    }
+                }
+                .btn-panel{
+                    &.bottom{
+                        background-color: #FAFAFA;
+                    }
+                }
+            }
+            .left-navpanel{
+                border-right: 0rem solid $base-border;
+            }
+        }
+    }
+}

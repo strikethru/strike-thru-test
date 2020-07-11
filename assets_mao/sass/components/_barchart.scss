@@ -1,0 +1,30 @@
+.bar-chart-bar {
+  background-color: $base-color;
+  display: block;
+  position: relative;
+  width: 100%;
+  line-height: 2rem;
+  .bar {
+    float: left;
+    height: 100%;
+    color: #444;
+    text-align: right;
+    padding: 0.5rem;
+    width: 0%;
+    @include transition(0.2s);
+    border-radius: .2rem;
+    white-space: nowrap;
+    &.bar1 {
+      background-color: $pale-secondary;
+    }
+    &.bar2 {
+      background-color: $pale-tertiary;
+    }
+	&.lbl-out{
+	span{
+	margin-right: -51px;
+    color: $base-color-light;
+		}	
+	}
+  }
+}

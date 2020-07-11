@@ -1,0 +1,139 @@
+.pg-pricing{
+    .filter-head{
+        margin-top: 0;
+    }
+}
+.bx{
+    &-current{
+        &-price{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: .25rem 0;
+            //width: 15rem;
+            .form-control{
+                padding: 0;
+                text-align: center;
+            }
+            .row-unit{
+                flex: 1;
+                position: relative;
+                label{
+                    margin: 0 .5rem 0 0;
+                    float: left;
+                    line-height: 3.2rem;
+                    height: 3.2rem;
+                }
+                &:first-child{
+                    margin: 0 .5rem 0 0;
+                }
+                &:last-child{
+                    margin: 0 0 0 .5rem;
+                }
+                .form-control{
+                    font-size: 1.3rem;
+                }
+                span{
+                    margin: 0!important;
+                }
+                small{
+                    display: block;
+                    margin-top: 0!important;
+                    font-size: 1.3rem;
+                    text-align: center;
+                    text-transform: capitalize;
+                    position: absolute;
+                    bottom: -2.1rem;
+                    width: 100%;
+                }
+            }
+            h4{
+                flex: 0 0 100%;
+                margin: 0;
+                text-align: center;
+                font-size: $base-font-size;
+                .btn{
+                    margin-top: .75rem;
+                    min-height: auto;
+                    line-height: normal;
+                }
+            }
+            span{
+                flex: 1;
+                margin: 0;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                &:first-child{
+                    margin-right: .375rem;
+                }
+                &:last-child{
+                    margin-left: .375rem;
+                    margin-right: .375rem;
+                }
+                .form-group{
+                    margin: 0;
+                    flex: auto;
+                    input{
+                        &[name~="promotionPrice"] {
+                            padding: 0 .5rem;
+                        }
+                    }
+                    &.edit{
+                        .form-control{
+                            background-color: #fff;
+                            border: .1rem solid #999;
+                        }
+                    }
+                }
+                *{
+                    flex: 1;
+                }
+                .btn{
+                    text-align: center;
+                    font-size: 1.4rem!important;
+                    color: $base-color-lighter!important;
+                    &-link{
+                        flex: 0 0 2.5rem;
+                    }
+                    &-cross{
+                        padding: 0!important;
+                        margin: 0;
+                        font-size: 1.8rem!important;
+                        border-width: .1rem 0;
+                        margin-right: .5rem;
+                    }
+                }
+                .flatpickr-input{
+                    padding: 0 .5rem;
+                    font-size: 1.15rem;
+                }
+            }
+            .form-control{
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+body[lang="th"]{
+    .bx{
+        &-current{
+            &-price{
+                //font-size: 1rem;
+                .form-control{
+                    padding: 0;
+                    text-align: center;
+                }
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768.98px) {
+    .bx-current-price{
+        min-width: 20rem;
+    }
+}

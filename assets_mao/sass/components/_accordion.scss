@@ -1,0 +1,83 @@
+.content-panel{
+        .card{
+            border: .1rem solid #e4e4e4;
+            border-radius: .1rem;
+            margin-bottom: 1.5rem;
+            &.disabled{
+                opacity: .6;
+                cursor: not-allowed;
+                .card-header h5 label{
+                    cursor: not-allowed;
+                }
+            }
+            &-header{
+                &.numbered{
+                    background-color: #999999;
+                    padding: 0;
+                    h5{
+                        position: relative;
+                        padding-left: 3.61rem;
+                        line-height: 3.86rem;
+                        .bx-badge{
+                            color: #000;
+                            background-color: #ffcc00;
+                            position: absolute;
+                            left: 0;
+                            top: 0;
+                            width: 3.86rem;
+                            line-height: 3.86rem;
+                            text-align: center;
+                            font-size: 1.5rem;
+                        }
+                        input{}
+                        label{
+                            text-transform: capitalize;
+                            width: 100%;
+                            cursor: pointer;
+                            color: #fff;
+                            margin-left: 1.6rem;
+                            font-size: $base-font-size;
+                        }
+                        .btn{
+                            transition: all 0.5s ease;
+                            padding: .375rem 1rem;
+                            color: #fff;
+                            font-size: 1.8rem;
+                            min-height: auto;
+                            line-height: normal;
+                            &.arrow{
+                                @include rotate(180deg);
+                                padding: 0;
+                                .fas{
+                                    margin: 0;
+                                }
+                            }
+                            &.collapsed{
+                                @include rotate(0deg);
+                            }
+                            .far{
+                                font-size: 1.4rem;
+                            }
+                        }
+                    }
+                    border-bottom: 0;
+                }
+            }
+            &-body{
+                border-top: .1rem solid $base-border;
+                padding: 1.5rem;
+                .form-row{
+                    &:last-child{
+                        .form-group{
+                            margin-bottom: 0;
+                        }
+                    }
+                }
+                .card{
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+}

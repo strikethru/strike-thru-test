@@ -1,0 +1,109 @@
+.custom{
+    &-calender{
+        .rbc{
+            &-header{
+                background-color: #4c4c4e;
+                color: #fff;
+                padding: .5rem 0;
+                &:first-child,
+                &:last-child{
+                    background-color: #ed1d24;
+                }
+            }
+            &-month-row{
+                & + .rbc-month-row{
+                    border-top: .1rem solid #9d9d9d;
+                }
+            }
+            &-day-bg{
+                & + .rbc-day-bg{
+                    border-left: .1rem solid #9d9d9d;
+                    // e4e4e4
+                }
+            }
+            &-month-row{
+                .rbc-today{
+                    background-color: #fff;
+                }
+            }
+            // &-today{
+            //     background-color: #fff;
+            // }
+            &-off-range-bg{
+                background-color: #f5f5f5;
+            }
+            &-month-view{
+                height: auto;
+            }
+            &-toolbar{
+                margin-bottom: 1.5rem;
+                &-label{
+                    font-size: 1.8rem;
+                    color: #000;
+                }
+                button{
+                    border-color: #d8d8d8!important;
+                    box-shadow: none!important;
+                    border-radius: .2rem;
+                    &:active,
+                    .rbc-active{
+                        background-color: #f1f1f2!important;
+                    }
+                }
+            }
+            &-row{
+                &-content{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content:space-between;
+                    height: 100%;
+                }
+                &-segment{
+                    padding: 0 0 .75rem .75rem;
+                    .rbc-event{
+                        width: 1.7rem;
+                        height: 1.7rem;
+                        border-radius: 1.7rem!important;
+                        display: inline-block!important;
+                        padding: 0;
+                    }
+                }
+            }
+            &-date-cell{
+                padding-right: .75rem;
+                padding-top: .25rem;
+                font-size: 1.8rem;
+                color: #999;
+                // adadad
+                &.rbc-now{
+                    color: #000;
+                    &.rbc-current{
+
+                    }
+                }
+                &.rbc-off-range{
+                    opacity: .25;
+                }
+                &:first-child,
+                &:last-child{
+                    color: #ff0000;
+                }
+            }
+            &-row-bg{
+                background-color: #fff;
+            }
+            //Weeks
+            &-day-slot{
+                .rbc-events-container{
+                    right: 0;
+                    .rbc-event{
+                        border-radius: 0;
+                    }
+                }
+            }
+        }
+        &-btn{
+            text-align: right;
+        }
+    }
+}

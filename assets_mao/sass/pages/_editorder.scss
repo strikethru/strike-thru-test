@@ -1,0 +1,165 @@
+.buyerdetails-container, #installerSearchdetails {
+	font-size:1.2rem;
+  .blue-bg {
+    min-height: 10rem;
+  }
+  ul,li{
+  list-style:none;
+  padding:2px 0px;
+
+
+  p{
+	  font-weight: 600;
+	  display:table-cell;
+	  min-width: 18rem;
+	  padding: 0px;
+		margin: 0;
+		position: relative;
+		i{
+			position: absolute;
+			right: 1rem;
+			font-style: normal;
+			
+		}
+  }
+  span{
+	  display: table-cell;
+  }
+  }
+  .btn-secondary {
+    background: $primary-inner !important;
+	border:none;
+	}
+	h5{
+	color:$badge-color-head;
+	font-weight:bold;
+	}
+}
+.professionaldetails-container{
+	h5{
+		color:$btn-primary-color;
+		font-weight:bold;
+		}
+	.search-bx {
+		background: $base-border;
+		}
+	label{
+		font-size:1.2rem;
+		height: auto;
+		line-height: 2.3rem;
+		text-align: right;
+			&:after{
+				background: $btn-secondary-color;
+				color:$white;
+				text-transform: capitalize;
+				height: 2.9rem;
+				line-height: 2.3rem;
+				font-size: 13px;
+				border-radius: 0;
+			}
+			&.custom-file-label{
+				text-align: left !important;
+				line-height: 2.1rem;
+			}
+		}
+	.form-control {
+		padding: 0.75rem;
+		border: 0.07rem solid #e1e1e1;
+		border-radius: 0;
+		font-size:1.2rem;
+		line-height:normal !important;
+		&#paymentStatus{
+			min-width: 10.3rem;
+		}
+		}
+	.filterby-bx select{
+		width:100%;
+	}
+	.flatpickr-input{
+		background: $bg-disabled !important;
+	}
+	.height-auto{
+		line-height: normal !important;
+	}
+	.btn-primary {
+		border:1px solid transparent;
+		cursor: pointer;
+		&:hover{
+			border: 1px solid $btn-primary-color;
+		}
+	}
+
+}
+
+.status-section {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin: 3rem 0;
+	ul{
+		width: 20%;
+		border: 1px solid $soft-gray;
+		padding: 0;		
+		list-style: none;
+		margin: 0px auto;
+		li{
+			padding: .5rem;
+			text-align: center;
+			background:$offwhite;
+			font-weight: 500;
+			&:first-child{
+				background: $theme-primary;
+				color: $white;
+			}
+		}
+		&.leftbtn-add{
+			margin-left: 0px !important;
+		}
+		&.no-rightbtn{
+			margin-left: 0px !important;
+			margin-right: 39% !important
+		}
+	}
+
+	// button{
+	// 	position: absolute;
+	// 	&:first-child {
+	// 		left: 0;
+	// 	}
+	// 	&:last-child {
+	// 		right: 0;
+	// 	}
+	// }
+}
+.notifybuyerinstaller{
+	ul{
+		li{
+			p{
+			i{
+				position: absolute;
+				font-style: normal;
+				right: 20px;
+			}
+		}
+		}
+	}
+}
+.notifybuyerninstaller{
+	.modal-header{
+		background:$darkblue;
+		padding: .5rem;
+		border-radius: 0;
+		h6{
+			color: $white;
+			text-transform: capitalize;
+		}
+		.close{
+			color: $white;
+			font-size: 2rem;
+			font-weight: 400;
+		}
+	}
+	.modal-footer{
+		justify-content: center;
+	}
+}

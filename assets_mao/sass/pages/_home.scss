@@ -1,0 +1,364 @@
+/* -------- ONLY Home Page */
+/* Free Seller Account */
+.spotlite{
+    background-color: $primary-color;
+    padding: 2rem 1.5rem;
+    position: relative;
+        .create-seller{
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            flex-direction: column;
+            h1,
+            h2{
+                margin: 0 0 2rem 0;
+                color: #fff;
+                font-weight: 400;
+                font-size: 3.6rem;
+            }
+            h2{
+                margin: 0 0 3rem 0;
+                font-size: 2.2rem;
+            }
+            .btn{
+                border-radius: .3rem;
+                text-transform:initial;
+                margin: 0;
+                display: inline-block;
+                padding: 1.25rem 5rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+                border: 0!important;
+                line-height: normal;
+                min-height: inherit;
+            }
+        }
+    img{
+        width: 100%;
+    }
+    .free-seller-account{
+        background-color: rgba(255, 255, 255, 0.5);
+        padding: 1.5rem 2rem;
+        margin: 0 0;
+        // align-self: stretch;
+        // display: flex;
+        // justify-content: space-evenly;
+        // flex-direction: column;
+        h6{
+            margin: 0;
+            border: .1rem solid #555;
+            padding: .75rem;
+            font-size: 1.4rem;
+            text-align: center;
+            background-color: #f3f3f3;
+            border: .1rem solid $theme-primary;
+            color: $theme-primary;
+        }
+        .tell-us{
+           margin: 1rem 0; 
+        }
+        .btn{
+            width: 100%;
+        }
+        &-wrap{
+            position: absolute;
+            right: 0;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            max-width: 114rem;
+            margin: 0 auto;
+            padding: 0 1.5rem;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+        }
+        //Form
+        .form-group{
+            position: relative;
+            margin-bottom: .75rem;
+        }
+        .input_label{
+            height: auto;
+            background-color: red;
+            display: block;
+            margin: 0;
+            padding: 0;
+        }
+    }
+}
+
+.maomao{
+    &-info{
+        background-color: #eeeeee;
+        padding: 5rem 5rem;
+        h1{
+            font-size: 3.4rem;
+        }
+        h4{
+            font-size: 2rem;
+        }
+        h5{
+            font-size: 1.8rem;
+            width: 50%;
+            margin: 0 auto;
+        }
+        h6{
+            color: #666;
+            font-size: 1.5rem;
+        }
+        a{
+            background-color: $secondary-color;
+            width: 10rem;
+            height: 10rem;
+            i{
+                color: #4d4d4d;
+                font-size: 4.8rem;
+            }
+        }
+    }
+}
+
+.create-account{
+    background-color: #fff;
+    padding-top: 5rem;
+    img{
+        max-width: 34rem;
+    }
+    h2{
+        font-size: 2.8rem;
+        margin-top: 5rem;
+    }
+    h6{
+        font-size: 1.6rem;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 4rem 0 0 0;
+            padding: 0;
+            list-style: none;
+            color: #999;
+            font-size: 1.8rem;
+            span{
+                width: 4rem;
+                height: 4rem;
+                line-height: 4rem;
+                text-align: center;
+                font-size: 2.2rem;
+                background-color: #f2f3f4;
+                color: $base-color;
+                margin-right: 2rem;
+            }
+            &.active{
+                color: $base-color;
+                 span{
+                     background-color: $secondary-color;
+                 }   
+            }
+        }
+    }
+}
+
+.maomao-tiles{
+    background-color: #eeeeee;
+    padding: 5rem 5rem;
+    h1{
+        font-size: 3.4rem;
+    }
+    h4{
+        font-size: 1.8rem;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    .bx-tile{
+        background-color: #fff;
+        h5{
+            font-size: 1.8rem;
+            padding: 2rem 0;
+        }
+    }
+}
+
+.maomao-transie{
+    position: relative;
+    .transie{
+        background-color: rgba(13, 29, 37, 0.7);
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+
+        color: #fff;
+        padding: 5rem 5rem;
+    }
+    h1{
+        font-size: 3.4rem;
+    }
+    h4{
+        font-size: 1.8rem;
+        width: 50%;
+        margin: 0 auto;
+        margin-bottom: 4rem;
+    }
+    .transie-tile{
+        h3{
+            font-size: 2rem;
+        }
+        h6{
+            font-size: 1.8rem;
+        }
+        span{
+            font-size: 8rem;
+            color: $secondary-color;
+        }
+    }
+}
+
+.hilite{
+    position: relative;
+        .create-seller{
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            h1{
+                margin: 0 0 3rem 0;
+                text-align: center;
+                color: #fff;
+                font-size: 3.2rem;
+                font-weight: 400;
+            }
+            .btn{
+                border-radius: .3rem;
+                text-transform:initial;
+                margin: 0;
+                display: inline-block;
+                padding: 1.25rem 5rem;
+                font-size: 1.8rem;
+                font-weight: 500;
+                border: 0!important;
+                line-height: normal;
+                min-height: inherit;
+            }
+        }
+    
+}
+
+.footer-panel{
+    background-color: #fff;
+    padding: 5rem 5rem;
+    h5{
+        margin-bottom: 2rem;
+        font-size: 1.6rem;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            margin: 0 0 1rem 0;
+            padding: 0;
+            list-style: none;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}
+
+/* -------- ONLY Home Page */
+
+// iPad devices (landscape iPad, less than 1024px)
+@media (max-width: 1024.98px) {
+}
+
+// Small devices (landscape phones, less than 823px)
+@media (max-width: 823px) {
+    .password{
+        &_validator{
+
+            max-width: 27rem;
+
+            @include fadeInDown(
+                $duration: .3s,
+                $delay: .2s,
+                $function: ease
+            );
+
+            min-width: 27rem;
+            margin: 0 auto;
+            left: 0;
+            right: 0;
+            top: 7.2rem;
+            .tooltip-inner{
+                border: .1rem solid #ddd;
+                max-width: 26rem;
+            }
+            &.bs-tooltip-auto[x-placement^=right] .arrow,
+            &.bs-tooltip-right .arrow{
+                left: 0;
+                right: 0;
+                top: -.8rem;
+                margin: 0 auto;
+                transform: rotate(90deg);
+            }
+            &.bs-tooltip-auto[x-placement^=right] .arrow::before,
+            &.bs-tooltip-right .arrow::before{
+                border-right-color: #ddd;
+            }
+            &.bs-tooltip-auto[x-placement^=right] .arrow::after,
+            &.bs-tooltip-right .arrow::after{
+                position: absolute;
+                content: "";
+                border-color: transparent;
+                border-style: solid;
+                right: -.1rem;
+                border-width: .8rem .8rem .8rem 0;
+                border-right-color:#fff;
+            }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 768.98px) {
+    .header-panel{
+        padding: 0 1rem;
+    }
+}
+
+// Extra small devices (portrait phones, less than 736px)
+@media (max-width: 736.98px) {
+}
+
+// iPad devices (landscape iPad, less than 568px)
+@media (max-width: 568.98px) {
+}
+
+// Extra small devices (portrait phones, less than 414px)
+@media (max-width: 414.98px) {
+    body[lang="th"]{
+        .wizard .step-tiles h1{
+            font-size: 1.5rem;
+        }
+    }
+    .header-panel{
+        padding: 0;
+        .logo a .icon-nocnoc-com{
+            font-size: 2rem!important;
+            margin-right: 0;
+        }
+        .lang-home{
+            margin-left: 1rem!important;
+        }
+    }
+}

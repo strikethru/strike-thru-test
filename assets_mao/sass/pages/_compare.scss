@@ -1,0 +1,333 @@
+.compare{
+  position: relative;
+  h1{
+    margin: 0 0 1rem 0;
+    font-size: 1.8rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    color: #555;
+    line-height: 1.2;
+    display: block;
+    float: left;
+    width: 100%;
+  }
+  .print-compare-list {
+    position: absolute;
+    right: 2rem;
+    font-size: 2rem;
+    color: $theme-secondary;
+    &:hover {
+      opacity: 0.5;
+    }
+  }
+}
+.compare-list{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    /*    width: 100%;*/
+    padding: 1.5rem;
+    background-color: #fff;
+    margin: 0rem 0 0 0;
+    .items{
+      margin: 1.5rem;
+      flex: 1;
+      text-align: center;
+    }
+    .bximg{
+      border: 0;
+      width: 20rem;
+      height: 17rem;
+      overflow: hidden;
+      position: relative;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+    }
+    .product-name {
+      width: 20rem;   
+      padding: 1rem;
+      font-size: 1rem;
+      word-break: break-all;
+      overflow: hidden;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      height: 6rem;
+      overflow: hidden;
+      line-height: 4;    
+      h2 {
+        border-top: 0;
+        margin: 0;
+        background-color: $white;
+        font-size: 1.6rem;
+        text-transform: capitalize;
+        font-weight: 500;
+        text-align: center;
+        color: $grey;
+        overflow: hidden;
+        line-height: 1.25;
+      }
+    }
+    .table-responsive{
+        flex: 0 0 100%;
+    }
+    .table-bordered {
+      th {
+        &:nth-of-type(2){
+          border-left: 0;
+        }
+      }
+    }
+    .table{
+        margin: 1.5rem 0 0 0;
+        thead {
+          tr {
+            th {
+              border-right: 0;
+              &:last-child {
+                border-right: 0.1rem solid $border;
+              }
+            }
+          }
+        }
+        .items {
+          position: relative;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          flex-direction: column;
+          a {
+            &.close-compare-product {
+              position: absolute;
+              right: -2rem;;
+              top: -4.5rem;
+              color: $theme-primary;
+              font-size: 4rem;
+              font-weight: 300;
+              &:hover {
+                opacity: 0.5;
+              }
+            }
+          }
+        }
+        th{
+            font-weight: 500;
+            font-size: 1.4rem;
+            &.feature-group-title{
+                background-color: #f7f7f7;
+                text-transform: uppercase;
+            }
+        }
+        td{
+            font-size: 1.4rem;
+        }
+    }
+}
+/*Compare Panel*/
+.compare-panel {
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  left: 0;
+  background:$theme-primary;
+  display: flex;
+  justify-content: space-around;
+  .btn {
+    border-radius: 0.3rem;
+    padding-bottom: 0.2rem;
+    margin: 0 0.5rem;
+  }
+  .compare-product-section {
+    flex-grow: 7;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem;
+    justify-content: center;
+    .items {
+      border-radius: 0.3rem;
+      box-shadow: none;
+      display: flex;   
+      justify-content: space-between;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      flex-direction: row;
+      margin-right:2rem;
+      a {
+        &:hover {
+          text-decoration: none;
+        }
+      }
+
+      .bximg {
+        img {
+          width: 7rem;
+          height: 7rem;
+          border-radius: 50%;
+          background: $white;
+        }
+        &.not-available {
+          .label {
+            font-size: 1rem;
+            top: 2.5rem;
+            bottom: auto;
+            padding: 0;
+            width: auto;
+          }
+        }
+      }
+      .bxdetail {
+        padding: 0.5rem;
+        display: flex;
+        align-items: center;
+        flex-grow: 1;
+        font-size: 1rem;
+        word-break: break-all;
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-line-clamp: 3;
+        -webkit-box-orient: vertical;
+        h2 {
+          height: auto;
+          font-size: 1.3rem;
+          line-height: 1.3;
+          display:none;
+        }
+      }
+      .close {
+        display: flex;
+        align-self: flex-start;
+        padding: 0rem;
+        color: $white;
+        text-shadow: none;
+        font-size: 2.5rem;
+        font-weight: 300;
+      }
+    }
+  }
+  .compare-product-setting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 1rem;
+    a {
+      color: $white;
+      &.clear {
+        margin-top: 0.5rem;
+        &:hover, &:visited {
+          color: $white;
+        }
+      }
+    }
+  }
+  .close-compare-panel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    padding: 2rem;
+    background: $offwhite;
+    font-size: 1.5rem;
+    border-left: 0.2rem solid $border;
+    &:hover {
+      background: $white;
+      text-decoration: none;
+    }
+  }
+}
+
+
+@media screen and (max-width: 800px) {
+  .compare-product-section {
+    .items {
+      // flex-direction: column !important;
+      position: relative;
+      .close {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+  .compare-product-setting {
+    flex-direction: column !important;
+  }
+}
+@media screen and (max-width: 600px) {
+  .compare-panel {
+    .compare-product-section {
+      position: relative;
+      flex-wrap: nowrap;
+      overflow-y: scroll;
+    .items {
+      position: relative;
+      // flex-direction: column !important;
+      .bximg {
+        img {
+          width: 5rem !important;
+          height: 5rem !important;
+        }
+      }
+      .close {
+        position: absolute;
+        right: 0;
+      }
+    }
+  }
+}
+  .compare-product-setting {
+    flex-direction: column !important;
+  }
+  .close-compare-panel {
+    padding: 1rem !important;
+  }
+}
+@media screen and (max-width: 576px) {
+  .compare-panel {
+    .compare-product-section {
+      position: relative;
+      flex-wrap: nowrap;
+      overflow-y: scroll;
+      .items {
+      position: relative;
+      justify-content: space-around;
+      flex-direction: row;
+      .bximg {
+        flex-grow: 5;
+        img {
+          width: 5rem !important;
+          height: 5rem !important;
+        }
+        &.not-available {
+          .label {
+           font-size: 1rem;
+           padding: 0;
+           line-height: 1.3;
+          }
+        }
+      }
+      .bxdetail {
+        flex-grow: 5;
+        h2 {
+          font-size: 1rem;
+          text-align: center;
+        }
+      }
+      .close {
+        position: absolute;
+        right: 0;
+      }
+    }
+    }
+    .compare-product-setting {
+      padding: 0rem !important;
+      border-left: 0.1rem solid $theme-quaternary;
+      box-shadow: -0.5rem 0px 0.9rem -0.5rem $theme-quaternary;
+    }
+  }
+}

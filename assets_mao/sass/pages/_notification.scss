@@ -1,0 +1,82 @@
+.pg-notification{
+    background-color: $bg-content;
+    .notify{
+        @include bounceIn(
+            $duration: .75s,
+            $delay: .3s,
+            $function: ease, 
+        );
+        margin: 0;
+    }
+    h2{
+        margin: 3rem 0 1.5rem 0;
+        text-align: center;
+        text-transform: uppercase;
+        i{
+            margin-right: 1rem;
+        }
+    }
+    .bx-notify{
+        margin-bottom: 2rem;
+        color: #666;
+        h3{
+            margin-bottom: .75rem;
+            @include title-sm();
+            font-weight: 500;
+        }
+        .list{
+            &-group{
+                border-top: .1rem solid #eee;
+                background-color: transparent;
+                padding: 0;
+                &-item{
+                    border: 0;
+                    border-bottom: .1rem solid $base-border;
+                    margin: 0;
+                    padding: 1rem;
+                    background-color: $bg-shade-tertiary;
+                    cursor: pointer;
+                    &:hover{
+                        background-color: #f7f7f7;
+                    }
+                    a{
+                        cursor: pointer;
+                        &:hover{
+                            color: $base-color-dark;
+                        }
+                    }
+                    span{
+                        width: 19rem;
+                        display: inline-block;
+                        margin-right: 0;
+                        font-weight: 500;
+                        a{
+                            color: $btn-secondary-color;
+                            text-decoration: underline;
+                            &:hover{
+                                text-decoration: none;
+                                color: $btn-secondary-color;
+                            }
+                        }
+                    }
+                    &:first-child{
+                        border-radius: 0;
+                        //padding-top: 0;
+                    }
+                    &:last-child{
+                        border-radius: 0;
+                        //padding-bottom: 0;
+                        border-bottom: 0;
+                    }
+                }
+            }
+        }
+        & + {
+            .bx-notify{
+                .list-group-item{
+                    cursor: auto!important;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,201 @@
+.navbar-toggler{
+    &-wrap{
+        display: none!important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .left-navpanel{
+        border-right: .1rem solid $base-border;
+        .pad{
+            padding-bottom: 0!important;
+        }
+        .scroll-down{
+            i{
+                opacity: 1;
+            }
+        }
+        &:hover{
+            .scroll-down{
+                i{
+                    opacity: 1;
+                    @include fadeInDown(
+                        $duration: .25s,
+                        $delay: .1s,
+                        $function: ease, 
+                    );
+                }
+            }
+        }
+    }
+    body{
+        &.inner{
+            background-image: none!important;
+            .navbar-toggler{
+                &-wrap{
+                    display: block!important;
+                    position: fixed;
+                    top: 0;
+                    left: 0;
+                    //right: 0;
+                    z-index: 4;
+                    //background-color: #fff;
+                    text-align: right;
+                    padding: 0;
+                    margin: 2.9rem 0 0 1.5rem;
+                    .btn{
+                        margin-right: 0;
+                        line-height: 1.6rem;
+                        padding: 0;
+                        i{
+                            margin: 0!important;
+                            font-size: 2rem;
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .header-panel{
+                position: fixed!important;
+                left: 0;
+                top: 0;
+                right: 0;
+                z-index: 3;
+                .logo{
+                    margin-left: 3rem;
+                }
+            }
+            .content{
+                &-box{
+                    top: 0;
+                }
+                &-panel{
+                    margin-left: 1.5rem;
+                    margin-right: 1.5rem;
+                    h1{
+                        // position: relative;
+                        // z-index: 3;
+                        //width: 75%;
+                    }
+                }
+            }
+        }
+    }
+    .content-box{
+        position: relative;
+        top: 7.3rem; /* Height of Header */
+    }
+    .offcanvas-collapse {
+        position: fixed;
+        top: 7.3rem; /* Height of Header */
+        bottom: 0;
+        z-index: 5;
+        width: 25rem;
+        transition: -webkit-transform .3s ease-in-out;
+        transition: transform .3s ease-in-out;
+        transition: transform .3s ease-in-out, -webkit-transform .3s ease-in-out;
+        -webkit-transform: translateX(-101%);
+        transform: translateX(-101%);
+        margin-top: 0;
+        &.open {
+            -webkit-transform: translateX(0);
+            transform: translateX(0); /* Account for horizontal padding on navbar */
+        }
+        .accordion{
+            padding-bottom: 0;
+            // overflow-y: auto;
+            // max-height: 40rem;
+            /* width */
+            // &::-webkit-scrollbar {
+            //     width: .5rem;
+            // }
+
+            /* Track */
+            // &::-webkit-scrollbar-track {
+            //     background: $theme-primary; 
+            // }
+
+            /* Handle */
+            // &::-webkit-scrollbar-thumb {
+            //     background: $primary-color; 
+            // }
+
+            /* Handle on hover */
+            // &::-webkit-scrollbar-thumb:hover {
+            //     background: $primary-color; 
+            // }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 736px)
+@media (max-width: 736.98px) {
+    body{
+        padding-top: 6.4rem;
+        &.inner{
+            .header-panel{
+                .logo{
+                    margin-left: 4.9rem !important;
+                }
+            }
+            .navbar-toggler{
+                &-wrap{
+                    margin-top: 1.7rem;
+                }
+            }
+            .offcanvas-collapse {
+                top: 6.4rem;
+                margin-top: 0;
+            }
+            .header-items{
+                ul.header-items-list{
+                    li{
+                        a{
+                            .items-wrap{
+                                height: 2.4rem;
+                            }
+                        }
+                        &.user,
+                        &.language{
+                            .dropdown{
+                                height: 6.4rem;
+                                align-items: center;
+                            }
+                        }
+                        &.notify{
+                            height: 6.4rem;
+                            align-items: center;
+                            a{
+                                margin-top: 0;
+                            }
+                        }
+                        &.language{
+                            .items-wrap{
+                                img{
+                                    margin-top: .25rem;                        }
+                            }
+                        }
+                    }
+                }
+            }
+            .header-items ul.header-items-list li.user .dropdown.show::before,
+            .header-items ul.header-items-list li.language .dropdown.show::before{
+                bottom: .1rem;
+            }
+            .header-items ul.header-items-list li.user .dropdown.show::before,
+            .header-items ul.header-items-list li.user .dropdown.show::after,
+            .header-items ul.header-items-list li.language .dropdown.show::before,
+            .header-items ul.header-items-list li.language .dropdown.show::after{
+                bottom: .1rem;
+            }
+            .content-panel{
+                h1{
+                    margin-right: 0;
+                }
+            }
+            .content-box{
+                // z-index: 5;
+            }
+        }
+    }
+}

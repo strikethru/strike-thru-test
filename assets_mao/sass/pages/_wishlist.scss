@@ -1,0 +1,46 @@
+.my-cart{
+  &.wishlist {
+    .bxdetail {
+      .price {
+        .off-price {
+          @include breakpoint-down(sm){
+            height: auto;
+          }
+        }
+      }
+    }
+    .my-cart-item-desc {
+      height: auto;
+    }
+  }
+}
+.wishlist {
+  /* flex: 4; */
+  width: 100% !important;
+  padding: 1.5rem;
+  .demo2 {
+    .tse-content {
+      width: 100%;
+    }
+  }
+  .cart-action {
+    margin: 1rem 0;
+    label {
+      a {
+        &:hover, &:visited {
+          color: $theme-primary;
+        }
+      }
+    }
+  }
+  .bximg {
+    width: 10rem;
+    &.not-available {
+      position: relative;
+      .label {
+        font-size: 1rem;
+        // top: 40%;
+      }
+    }
+  }
+}

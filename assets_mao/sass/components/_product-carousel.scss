@@ -1,0 +1,38 @@
+.product-multi-carousel{
+    .carousel-indicators{
+        background-color: #fff;
+        bottom: -.1rem;
+        margin:0;
+        padding: 1.4rem 15% 0 15%;
+        li {
+            text-indent: 0;
+            width: 6.4rem;
+            height: 6.4rem;
+            margin:0 .7rem;
+            img{
+                border: .1rem solid #777;
+                width: 100%;
+            }
+            &::before,
+            &::after{
+                display: none;
+            }
+        }
+    }
+    .carousel-control-next,
+    .carousel-control-prev{
+        align-items: flex-end;
+        z-index: 99;
+    }
+    .carousel-control-next-icon,
+    .carousel-control-prev-icon{
+        background-color: #ccc;
+        margin-bottom: 25%;
+    }
+}
+
+/* Custom */
+.product-multi-carousel2{
+    max-width: 514px;
+    width: auto!important;
+}

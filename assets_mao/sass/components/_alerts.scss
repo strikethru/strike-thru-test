@@ -1,0 +1,211 @@
+.alert{
+    word-break: break-word;
+    margin: 0;
+    padding: 1.5rem;
+    border-radius: .1rem;
+    //@include bounce();
+    @include zoomInRight();
+         position: fixed;
+         top: 10.1rem;
+         right: 0;
+         width: 25%;
+         z-index: 5;
+         margin-right: 1.5rem;
+    &.dissolve{
+        @include zoomOutRight();
+    }
+    .arrow{
+        position: absolute;
+        display: block;
+        width: 1.5rem;
+        height: .75rem;
+        right: -1.5rem;
+        top: 0;
+         &::before,
+         &::after{
+             position: absolute;
+             display: block;
+             content: "";
+             border-color: transparent;
+             border-style: solid;
+             border-width: 1rem 0 1rem 1rem;
+             border-left-color: rgba(0,0,0,.25);
+             z-index: 7;
+         }
+         &::before{
+             right: 0.4rem;
+         }
+     }
+     &-success{
+        .arrow{
+            &::before{
+                border-left-color: #c3e6cb;
+            }
+            &::after{
+               border-left-color: #d4edda;
+           }
+        }
+    }
+    &-danger{
+        .arrow{
+            &::before{
+                border-left-color: #f5c6cb;
+            }
+            &::after{
+               border-left-color: #f8d7da;
+           }
+        }
+    }
+    &-warning{
+        .arrow{
+            &::before{
+                border-left-color: #ffeeba;
+            }
+            &::after{
+               border-left-color: #fff3cd;
+           }
+        }
+    }
+     .close{
+         font-size: 1.8rem;
+         padding: .5rem;
+     }
+    .messagepanel-close{
+        cursor: pointer;
+        font-size: 1.8rem;
+        margin: 0 1rem 0 0;
+        color: $base-color-lighter!important;
+        position: absolute;
+        right: 0;
+        top: 0;
+    }
+    &-wrap{
+        background-color: $bg-content;
+        margin: 0 -1.5rem;
+        padding: 0 0 1.5rem 0;
+    }
+    &-success{
+        background-color: #d4edda;
+        border-color: #c3e6cb;
+    }
+    &-danger{
+        background-color: #f8d7da;
+        border-color: #f5c6cb;
+    }
+    &-warning{
+        background-color: #fff3cd;
+        border-color: #ffeeba;
+    }
+}
+.is-invalid{
+    input{
+        border-color: #dc3545;
+    }
+    .invalid-feedback{
+        display: block;
+    }
+}
+.invalid-feedback{
+    color: #dc3545;
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: .3rem;
+    text-transform: initial;
+    display: block;
+}
+
+.accordion{
+    .card-body{
+        .alert{
+            position: static;
+            width: 100%;
+            padding: .5rem 1rem;
+        }
+    }
+}
+
+.password_validator{
+    @include fadeInLeft(
+        $duration: .3s,
+        $delay: .2s,
+        $function: ease
+    );
+    //right: 0;
+    left: 100%;
+    top: 0;
+    min-width: 27rem;
+    margin-left: 4.4rem;
+    //opacity: 1;
+    &.bs-tooltip-auto[x-placement^=right] .arrow,
+    &.bs-tooltip-right .arrow{
+        width: .8rem;
+        height: .8rem;
+        left: -.4rem;
+        top: .8rem;
+    }
+    &.bs-tooltip-auto[x-placement^=right] .arrow::before,
+    &.bs-tooltip-right .arrow::before{
+        border-right-color: #fff;
+        border-width: .8rem .8rem .8rem 0;
+    }
+    .validator{
+        &_container{
+            text-align: left;
+            .rules_list{
+                margin: 0;
+                padding: 0;
+                font-size: 1.3rem;
+                li{
+                    list-style: none;
+                    margin: 0 0 1rem 0;
+                    padding: 0;
+                    &:last-child{
+                        margin-bottom: 0;
+                    }
+                    .far{
+                        margin-right: 1rem;
+                        color: $text-danger;
+                    }
+                    .icon{
+                        &_valid{
+                            display: none;
+                        }
+                        &_invalid{
+                            display: inline-block;
+                        }
+                    }
+                    &.valid{
+                        .far{
+                            color: $text-success;
+                        }
+                        .icon{
+                            &_valid{
+                                display: inline-block;
+                            }
+                            &_invalid{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &_title{
+            margin: 0 0 1.25rem 0;
+            &.valid{
+                color: $text-success;
+            }
+            &.invalid{
+                color: $text-danger;
+            }
+        }
+    }
+    .tooltip{
+        &-inner{
+            padding: 1.25rem;
+            background-color: #fff;
+            color: #555;
+            min-width: 26rem;
+        }
+    }
+}

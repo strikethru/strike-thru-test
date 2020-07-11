@@ -1,0 +1,59 @@
+.pg-manageinventory{
+    .manage-products{
+        .filter-head{
+            .filterpanel{
+                justify-content: space-between;
+            }
+        }
+    }
+}
+
+.badges{
+    .btn{
+        cursor: default!important;
+        padding: 0!important;
+        line-height: normal;
+        font-size: 1.2rem;
+        font-weight: 400;
+        margin-right: .5rem;
+        width: 10.4rem;
+        &:last-child{
+            margin-right: 0;
+        }
+        span{
+            //color: $base-color;
+            text-transform: capitalize;
+        }
+        &-outline{
+            &-success,
+            &-danger{
+                &:hover{
+                    span{
+                        color: #fff!important;
+                    }
+                }
+            }
+            &-warning{
+                // color: #ecac00;
+                // border-color: #ecac00;
+                &:hover{
+                    span{
+                        color: $base-color!important;
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 736px)
+@media (max-width: 736.98px) {
+    .badges{
+        .btn{
+            margin-bottom: .5rem;
+            &:last-child{
+                margin-bottom: 0;
+            }
+        }
+    }
+}

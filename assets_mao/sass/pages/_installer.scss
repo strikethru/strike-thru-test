@@ -1,0 +1,13 @@
+.tableorder-list{
+    table {       
+        th{
+            color: $white;
+            background: $darkblue !important;
+            border:none;
+            text-align: left
+        }
+    }
+}
+.sty-unassigned{
+    background: red
+}

@@ -1,0 +1,90 @@
+.flatpickr{
+    &-input{
+        width: 100%;
+        display: block;
+        background-color: transparent;
+        position: relative;
+        z-index: 3;
+    }
+    &-day{
+        &.selected{
+            background-color: $theme-primary;
+            border-color: $theme-primary;
+        }
+    }
+    &-prev-month,
+    &-next-month{
+        &:hover{
+            svg{
+                fill: $theme-primary!important;
+            }
+        }
+    }
+    &-months{
+        .flatpickr-month{
+            height: 3.1rem;;
+        }
+    }
+    &-current-month{
+        padding: 0;
+        span{
+            &.cur-month{
+                margin-left: 0;
+                background-color: transparent!important;
+            }
+        }
+    }
+}
+.datepicker-wrap{
+    position: relative;
+    .fa-calendar-alt{
+        position: absolute;
+        right: .8rem;
+        bottom: .8rem;
+        color: $base-color-lighter;
+        z-index: 2;
+        font-size: 1.5rem;
+    }
+    &.upper {
+        .fa-calendar-alt{
+            z-index: 9;
+        }
+    }
+    &.date-fix{
+        .fa-calendar-alt{      
+        z-index: 3;
+    }
+    }
+    &.border{
+        .datepicker{
+            border: 1px solid $theme-tertiary !important;
+            background: $white;
+        }
+    }
+    .invalid-feedback{
+        position: absolute;
+        left: .75rem;
+        bottom: -1.5rem;
+    }
+}
+
+.datepicker{
+    position: relative;
+    .btn-cross{
+        position: absolute;
+        right: 0;
+        top: 0;
+        margin-right: 3.5rem;
+        font-size: 2.5rem;
+        color: $base-color-light!important;
+        padding: 0;
+        font-weight: 400;
+        opacity: 0;
+        z-index: 4;
+    }
+    &:hover{
+        .btn-cross{
+            opacity: 1;
+        }
+    }
+}

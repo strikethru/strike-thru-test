@@ -1,0 +1,62 @@
+.tag{
+    &-wrap{
+        &.form-control{
+            padding: 0 .3rem;
+        }
+        input{
+            margin: 0;
+            background-color: $tag-color;
+            border: .1rem solid $base-border;
+            color: #aaa;
+            line-height: normal;
+            padding: 0 .5rem;
+            span{
+                margin-left: .5rem;
+                color: $base-color;
+            }
+        }
+    }
+}
+
+
+
+div.ReactTags__tags {
+    position: relative;
+}
+
+/* Styles for the input */
+div.ReactTags__tagInput {
+    width: 235px;
+    border-radius: 2px;
+    display: inline-block;
+}
+div.ReactTags__tagInput input.ReactTags__tagInputField{
+    line-height: 3rem;
+}
+div.ReactTags__tagInput input.ReactTags__tagInputField,
+div.ReactTags__tagInput input.ReactTags__tagInputField:focus {
+    height: auto;
+    margin: 0;
+    font-size: 1.2rem;
+    width: 100%;
+    border: 0;
+    padding: 0 4px;
+    background-color: transparent;
+}
+
+/* Styles for selected tags */
+div.ReactTags__selected span.ReactTags__tag {
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    font-size: 1.2rem;
+    display: inline-block;
+    padding: 0 .5rem;
+    margin: .25rem .5rem .25rem 0;
+    cursor: move;
+    border-radius: .1rem;
+}
+div.ReactTags__selected a.ReactTags__remove {
+    color: #555;
+    margin-left: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,50 @@
+@import "animate/animate.scss";
+@import "abstracts/variables";
+
+@import "components/alerts";
+@import "components/table";
+@import "components/browse";
+@import "components/tooltip";
+@import "components/tags";
+
+@import "components/dropdown";
+@import "components/modal";
+@import "components/alerts";
+@import "components/barchart";
+
+
+@import "pages/manage-products";
+@import "pages/add-products";
+@import "pages/create-products";
+@import "pages/add-brand";
+@import "pages/pricing";
+@import "pages/promotions";
+@import "pages/orders";
+@import "pages/inventory";
+@import "pages/product-onboarding";
+
+
+
+
+
+
+
+//Installation Components
+@import "components/group-search";
+@import "components/accordion";
+@import "components/datepicker";
+
+@import "pages/jobs";
+
+
+
+
+
+
+
+
+@import "components/offcanvas";
+@import "components/star-rating";
+@import "components/multiselect";
+@import "components/calender";
+@import "components/select-tags";

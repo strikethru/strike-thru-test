@@ -1,0 +1,152 @@
+.stepper-wizard{
+.wizard-inner ul.stepper li a {
+    background-color: #fff;
+    border-radius: 0;
+    margin: 0;
+    padding: 25% 0;
+    font-size: 2.5rem;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: $theme-primary;
+    border: .15rem solid #8c8fcf;
+    cursor: default;
+    border-radius: 50%;
+    cursor: pointer;
+    max-width: 6rem;
+    min-width: 6rem;
+    height: 6rem;
+    line-height: 6rem;
+    &:hover{
+        color:  $theme-primary;
+        border: .15rem solid #ddd;
+    }
+    &.active{
+        &:hover{
+            color: $white;
+            border: .15rem solid #8c8fcf;
+            cursor: not-allowed;
+        }
+    }
+    &.active{
+      background-color: $theme-primary !important;
+      border-color: $theme-primary;
+      color:$white !important;    
+  }
+}
+.wizard-inner ul.stepper li {
+    list-style: none;
+    flex: 0 0 5%;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    &:hover{
+        flex: 0 0 5%;
+
+    }
+}
+.wizard-inner.horz ul.stepper {
+    flex-direction: row;
+    align-items: flex-start;
+}
+
+.wizard-inner ul.stepper {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2;
+    position: relative;
+}
+.wizard-inner ul.stepper li h3{
+    text-transform: capitalize;
+    font-size: 1rem;
+    color: $darkblue;
+    font-weight: 550;
+}
+span.round-tab:hover {
+    color:$base-color-darker;
+    border: 1px solid $base-color-darker;
+}
+.nav-pills .nav-item:first-child .nav-link {
+    border-left-width: .15rem !important;
+}
+
+.wizard-inner.horz .connecting-line{
+    top: 3rem;
+    border-top: .1rem dashed $grey-basic;
+}
+
+.wizard-inner {
+  .card-body  {
+    h5 {
+      border-bottom: 0.1rem solid $border;
+    }
+  }
+  .scheduling {
+    display: flex;
+    justify-content: space-between;
+    label {
+      padding-left:0;
+    }
+    .scheduling-left {
+      width: 100%;
+      .datepicker-wrap {
+        .fa-calendar-alt {
+          
+        }
+      }
+    }
+    .scheduling-right {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: row;
+    }
+  }
+  .date-history {
+
+  }
+  .job-details {
+    width: 100%;
+  }
+  .btn-sm {
+    padding: 0 1rem !important;
+    line-height: 1.5 !important;
+    border-radius: .2rem !important;
+    font-size: 1.3rem ;
+  }
+  .custom-file {
+    .custom-file-input {
+      border-top-right-radius: 0.25rem;
+      border-bottom-right-radius: 0.25rem;
+    }
+    .custom-file-label {
+      margin: 0;
+      color: #ced4da!important;
+      text-align: left;
+      text-transform: capitalize;
+      height: auto;
+      line-height: 1.9;
+      border-top-right-radius: 0.25rem !important;
+      border-bottom-right-radius: 0.25rem !important;
+      &:after{
+        background: $leafgreen;
+        color: $white;
+        text-transform: capitalize;
+        height: 2.9rem;
+        line-height: 2.3rem;
+        font-size: 13px;
+        border-radius: 0;
+        border-top-right-radius: 0.25rem ;
+        border-bottom-right-radius: 0.25rem;
+        font-weight: 550;
+      }
+    }
+  }
+}
+
+}

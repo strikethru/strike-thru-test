@@ -1,0 +1,1281 @@
+<!DOCTYPE html>
+<!--
+* CoreUI - Free Bootstrap Admin Template
+* @version v2.1.11
+* @link https://coreui.io
+* Copyright (c) 2018 creativeLabs Łukasz Holeczek
+* Licensed under MIT (https://coreui.io/license)
+-->
+
+<html lang="en">
+
+<head>
+  <base href="./">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+  <meta name="description" content="CoreUI - Open Source Bootstrap Admin Template">
+  <meta name="author" content="Łukasz Holeczek">
+  <meta name="keyword" content="Bootstrap,Admin,Template,Open,Source,jQuery,CSS,HTML,RWD,Dashboard">
+  <title>Strike-Thru profile Page</title>
+  <!-- Icons-->
+  <link href="node_modules/@coreui/icons/css/coreui-icons.min.css" rel="stylesheet">
+  <link href="node_modules/flag-icon-css/css/flag-icon.min.css" rel="stylesheet">
+  <link href="node_modules/font-awesome/css/font-awesome.min.css" rel="stylesheet">
+  <link href="node_modules/simple-line-icons/css/simple-line-icons.css" rel="stylesheet">
+  <!-- Main styles for this application-->
+  <link href="css/style.css" rel="stylesheet">
+  <link href="vendors/pace-progress/css/pace.min.css" rel="stylesheet">
+  <!-- Global site tag (gtag.js) - Google Analytics-->
+  <script async="" src="https://www.googletagmanager.com/gtag/js?id=UA-118965717-3"></script>
+  <script async="" src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+  
+  <script async="" src="js/src/script.js"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+    gtag('js', new Date());
+    // Shared ID
+    gtag('config', 'UA-118965717-3');
+    // Bootstrap ID
+    gtag('config', 'UA-118965717-5');
+  </script>
+</head>
+
+<body class="app header-fixed sidebar-fixed aside-menu-fixed sidebar-lg-show">
+  <header class="app-header navbar">
+    <button class="navbar-toggler sidebar-toggler d-lg-none mr-auto" type="button" data-toggle="sidebar-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a class="navbar-brand" href="#">
+      <img class="navbar-brand-full" src="img/brand/logo1-blue-StrikeThru.png" width="89" height="25" alt="CoreUI Logo">
+
+      <img class="navbar-brand-minimized" src="img/brand/sygnet.svg" width="30" height="30" alt="CoreUI Logo">
+    </a>
+    <button class="navbar-toggler sidebar-toggler d-md-down-none" type="button" data-toggle="sidebar-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <ul class="nav navbar-nav d-md-down-none">
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">Dashboard</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">Users</a>
+      </li>
+      <li class="nav-item px-3">
+        <a class="nav-link" href="#">Settings</a>
+      </li>
+    </ul>
+    <ul class="nav navbar-nav ml-auto">
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#">
+          <i class="icon-bell"></i>
+          <span class="badge badge-pill badge-danger">5</span>
+        </a>
+      </li>
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#">
+          <i class="icon-list"></i>
+        </a>
+      </li>
+      <li class="nav-item d-md-down-none">
+        <a class="nav-link" href="#">
+          <i class="icon-location-pin"></i>
+        </a>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">
+          <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+        </a>
+        <div class="dropdown-menu dropdown-menu-right">
+          <div class="dropdown-header text-center">
+            <strong>Account</strong>
+          </div>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-bell-o"></i> Updates
+            <span class="badge badge-info">42</span>
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-envelope-o"></i> Messages
+            <span class="badge badge-success">42</span>
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-tasks"></i> Tasks
+            <span class="badge badge-danger">42</span>
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-comments"></i> Comments
+            <span class="badge badge-warning">42</span>
+          </a>
+          <div class="dropdown-header text-center">
+            <strong>Settings</strong>
+          </div>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-user"></i> Profile</a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-wrench"></i> Settings</a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-usd"></i> Payments
+            <span class="badge badge-secondary">42</span>
+          </a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-file"></i> Projects
+            <span class="badge badge-primary">42</span>
+          </a>
+          <div class="dropdown-divider"></div>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-shield"></i> Lock Account</a>
+          <a class="dropdown-item" href="#">
+            <i class="fa fa-lock"></i> Logout</a>
+        </div>
+      </li>
+    </ul>
+    <button class="navbar-toggler aside-menu-toggler d-md-down-none" type="button" data-toggle="aside-menu-lg-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <button class="navbar-toggler aside-menu-toggler d-lg-none" type="button" data-toggle="aside-menu-show">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  </header>
+  <div class="app-body">
+    <div class="sidebar">
+      <nav class="sidebar-nav">
+        <ul class="nav">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">
+              <i class="nav-icon icon-speedometer"></i> Dashboard
+              <span class="badge badge-primary">NEW</span>
+            </a>
+          </li>
+          <li class="nav-title">Theme</li>
+          <li class="nav-item">
+            <a class="nav-link" href="colors.html">
+              <i class="nav-icon icon-drop"></i> Colors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="typography.html">
+              <i class="nav-icon icon-pencil"></i> Typography</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="Profile.html">
+              <i class="nav-icon icon-pencil"></i> Profile</a>
+          </li>
+          <li class="nav-title">Components</li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#">
+              <i class="nav-icon icon-puzzle"></i> Base</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="base/breadcrumb.html">
+                  <i class="nav-icon icon-puzzle"></i> Breadcrumb</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/cards.html">
+                  <i class="nav-icon icon-puzzle"></i> Cards</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/carousel.html">
+                  <i class="nav-icon icon-puzzle"></i> Carousel</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/collapse.html">
+                  <i class="nav-icon icon-puzzle"></i> Collapse</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/forms.html">
+                  <i class="nav-icon icon-puzzle"></i> Forms</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/jumbotron.html">
+                  <i class="nav-icon icon-puzzle"></i> Jumbotron</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/list-group.html">
+                  <i class="nav-icon icon-puzzle"></i> List group</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/navs.html">
+                  <i class="nav-icon icon-puzzle"></i> Navs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/pagination.html">
+                  <i class="nav-icon icon-puzzle"></i> Pagination</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/popovers.html">
+                  <i class="nav-icon icon-puzzle"></i> Popovers</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/progress.html">
+                  <i class="nav-icon icon-puzzle"></i> Progress</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/scrollspy.html">
+                  <i class="nav-icon icon-puzzle"></i> Scrollspy</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/switches.html">
+                  <i class="nav-icon icon-puzzle"></i> Switches</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/tables.html">
+                  <i class="nav-icon icon-puzzle"></i> Tables</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/tabs.html">
+                  <i class="nav-icon icon-puzzle"></i> Tabs</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="base/tooltips.html">
+                  <i class="nav-icon icon-puzzle"></i> Tooltips</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#">
+              <i class="nav-icon icon-cursor"></i> Buttons</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="buttons/buttons.html">
+                  <i class="nav-icon icon-cursor"></i> Buttons</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buttons/button-group.html">
+                  <i class="nav-icon icon-cursor"></i> Buttons Group</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buttons/dropdowns.html">
+                  <i class="nav-icon icon-cursor"></i> Dropdowns</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="buttons/brand-buttons.html">
+                  <i class="nav-icon icon-cursor"></i> Brand Buttons</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="charts.html">
+              <i class="nav-icon icon-pie-chart"></i> Charts</a>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#">
+              <i class="nav-icon icon-star"></i> Icons</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="icons/coreui-icons.html">
+                  <i class="nav-icon icon-star"></i> CoreUI Icons
+                  <span class="badge badge-success">NEW</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="icons/flags.html">
+                  <i class="nav-icon icon-star"></i> Flags</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="icons/font-awesome.html">
+                  <i class="nav-icon icon-star"></i> Font Awesome
+                  <span class="badge badge-secondary">4.7</span>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="icons/simple-line-icons.html">
+                  <i class="nav-icon icon-star"></i> Simple Line Icons</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#">
+              <i class="nav-icon icon-bell"></i> Notifications</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="notifications/alerts.html">
+                  <i class="nav-icon icon-bell"></i> Alerts</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="notifications/badge.html">
+                  <i class="nav-icon icon-bell"></i> Badge</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="notifications/modals.html">
+                  <i class="nav-icon icon-bell"></i> Modals</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="widgets.html">
+              <i class="nav-icon icon-calculator"></i> Widgets
+              <span class="badge badge-primary">NEW</span>
+            </a>
+          </li>
+          <li class="divider"></li>
+          <li class="nav-title">Extras</li>
+          <li class="nav-item nav-dropdown">
+            <a class="nav-link nav-dropdown-toggle" href="#">
+              <i class="nav-icon icon-star"></i> Pages</a>
+            <ul class="nav-dropdown-items">
+              <li class="nav-item">
+                <a class="nav-link" href="login.html" target="_top">
+                  <i class="nav-icon icon-star"></i> Login</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="register.html" target="_top">
+                  <i class="nav-icon icon-star"></i> Register</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="404.html" target="_top">
+                  <i class="nav-icon icon-star"></i> Error 404</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="500.html" target="_top">
+                  <i class="nav-icon icon-star"></i> Error 500</a>
+              </li>
+            </ul>
+          </li>
+          <!-- <li class="nav-item mt-auto">
+            <a class="nav-link nav-link-success" href="https://coreui.io" target="_top">
+              <i class="nav-icon icon-cloud-download"></i> Download CoreUI</a>
+          </li> -->
+          <!-- <li class="nav-item">
+            <a class="nav-link nav-link-danger" href="https://coreui.io/pro/" target="_top">
+              <i class="nav-icon icon-layers"></i> Try CoreUI
+              <strong>PRO</strong> -->
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button class="sidebar-minimizer brand-minimizer" type="button"></button>
+    </div>
+    <main class="main">
+      <!-- Breadcrumb-->
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item">Home</li>
+        <li class="breadcrumb-item">
+          <a href="#">Admin</a>
+        </li>
+        <li class="breadcrumb-item active">Dashboard</li>
+        <!-- Breadcrumb Menu-->
+        <li class="breadcrumb-menu d-md-down-none">
+          <div class="btn-group" role="group" aria-label="Button group">
+            <a class="btn" href="#">
+              <i class="icon-speech"></i>
+            </a>
+            <a class="btn" href="./">
+              <i class="icon-graph"></i>  Dashboard</a>
+            <a class="btn" href="#">
+              <i class="icon-settings"></i>  Settings</a>
+          </div>
+        </li>
+      </ol>
+      <div class="row">
+        <div class="col-md-12">
+          <div class="card">
+            <div class="card-header">
+              <strong>Basic Form</strong> Elements</div>
+            <div class="card-body">
+              <form class="form-horizontal" action="" method="post" enctype="multipart/form-data">
+
+                <!-- <div class="person-icon">
+                    <img [src]="profileImage" style="max-width: 100%; max-height: 
+                     100%;">
+                    <input (change)="onPersonEdit($event)" required accept=".jpg" 
+                     type="file" style="opacity: 0.0; position: absolute; top:120px; 
+                     left: 30px; bottom: 0; right:0; width: 200px; height:200px;" />
+                  </div> -->
+
+                <!-- <table>
+                    <img style="margin-left:25px;" src="upload2/avatar.png" width="200" height="200" />
+                    <tr><td><input type="file" name="image" ></td></tr>
+                    <tr><td><input name="Submit" type="submit" value="Upload image"></td></tr>
+                    </table> -->
+                
+                  <div class="col-sm-8" style="float: left" style="margin-bottom: 0rem">
+                    <div class="form-group row" style="margin-bottom: 0rem">
+                      <div class="form-group col-sm-4" style="margin-bottom: 0rem">
+                        <label for="First name">First Name</label>
+                        <input class="form-control" id="first-name" type="text" placeholder="Enter First Name">
+                      </div>
+                      <div class="form-group col-sm-4" style="margin-bottom: 0rem">
+                        <label for="Middle name">Middle Name</label>
+                        <input class="form-control" id="middle-name" type="text" placeholder="Enter Middle Name">
+                      </div>
+                      <div class="form-group col-sm-4">
+                        <label for="Last Name">Last Name</label>
+                        <input class="form-control" id="last-name" type="text" placeholder="Enter Last Name">
+                      </div>
+                    </div>
+                    <div class="form-group row">
+                      <div class="form-group col-sm-6">
+                        <label for="Email">Email</label>
+                        <input class="form-control" id="email" type="text" placeholder="Enter email id">
+                      </div>
+                      <div class="form-group col-sm-6">
+                        <label for="mobile">Mobile No</label>
+                        <input class="form-control" id="mobile-number" type="text" placeholder="Enter Mobile Number">
+                      </div>
+                    </div>
+
+                  </div>
+                
+                <div class="col-sm-4" style="float:right; position:relative; top: -90px;right: -210px; margin-bottom: 0rem">
+                  <div class="col-sm-5 col-md-5">                    
+                    <div class="circle">
+                      <img src="img/avatars/8.jpg" >
+                    </div>
+                    <div class="p-image">
+                      <i class="fa fa-camera upload-button"></i>
+                      <input class="file-upload" type="file" accept="image/*" />
+                    </div>
+                  </div>
+
+                  <!-- <div class="form-group row"> -->
+                  <!-- <label class="col-md-3 col-form-label" for="file-input">File input</label> -->
+                  <!-- <div class="col-md-9">
+                          <input id="file-input" type="file" name="file-input">
+                        </div>
+                      </div> -->
+                </div>
+            </div>
+            <div>
+              
+              <div class="form-group row">
+                <div class="form-group col-sm-11">
+                  <label for="Email">Address Line 01</label>
+                  <input class="form-control" id="address-line-01" type="text" placeholder="Enter Address line 01">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form-group col-sm-11">
+                  <label for="Email">Address Line 02</label>
+                  <input class="form-control" id="address-line-02" type="text" placeholder="Enter Address Line 02">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form-group col-sm-4">
+                  <label for="Email">City / Location</label>
+                  <input class="form-control" id="city-location" type="text" placeholder="Enter City / Location">
+                </div>
+                <div class="form-group col-sm-4">
+                  <label for="mobile">PIN Code</label>
+                  <input class="form-control" id="pin-code" type="text" placeholder="Enter PIN Code">
+                </div>
+              </div>
+              <div class="form-group row">
+                <div class="form-group col-sm-3">
+                  <div class="col-6 col-sm-2 col-md-2 col-xl mb-3 mb-xl-0">
+                    <button class="btn btn-block btn-primary" type="button">Upload ID Proof</button>
+
+
+                    
+                  </div>
+                </div>
+                <div class="form-group col-sm-3">
+                  <div class="col-6 col-sm-2 col-md-2 col-xl mb-3 mb-xl-0">
+                    <button class="btn btn-block btn-primary" type="button">Upload Address Proof</button>
+                  </div>
+                </div> </div>
+
+
+
+              <div class="form-group row">
+                  <!-- <label class="col-md-3 col-form-label">Checkboxes</label> -->
+                  <div class="col-md-9 col-form-label">
+                    <div class="form-check checkbox">
+                      <!-- <input id="Check01" type="checkbox" value=""onclick="myFunction()">
+                      
+                      <label class="form-check-label" for="Check01">Want to Drive</label>
+                      
+                      <p id="text" style="display:none">Checkbox is CHECKED!-sitesh</p> -->
+
+                      <label for="chkPassport">
+                        <input type="checkbox" id="chkPassport" />
+                        Want to Drive ?
+                    </label>
+                  
+                    <div  id="dvPassport" style="display: none">
+                      
+                        <!-- <div id="dvPassport" style="display: none"> -->
+                      <div class="form-group row" >
+                            <div class="form-group col-sm-3" >
+                              <label for="select1">Driving License Class</label>
+                                <!-- <div class="col-md-6"> -->
+                                <select class="form-control" id="select1" name="select1">
+                                  <option value="0">Please select</option>
+                                  <option value="1">MC 50CC (Motorcycle 50cc)</option>
+                                  <option value="2">MCWOG/FVG</option>
+                                  <option value="3">LMV-NT</option>
+                                  <option value="4">MC EX50CC</option>
+                                  <option value="5">MC With Gear or M/CYCL.WG</option>
+                                  <option value="6">MGV</option>
+                                  <option value="7">LMV</option>
+                                  <option value="8">HMV</option>
+                                  <option value="9">HGMV</option>
+                                  <option value="10">HPMV/HTV</option>
+                                  <option value="11">Trailer</option>                            
+                                </select>
+                                </div>
+                                  <div class="form-group col-sm-3" style="margin-bottom: 0rem">
+                                    <label for="DrivingLicenseNo">Driving License No.</label>
+                                    <input class="form-control" id="middle-name" type="text" placeholder="Enter DL No.">
+                                    </div>
+                                  
+                                  <div class="form-group col-sm-3" style="margin-bottom: 0rem">
+                                    <label for="DrivingLicenseNo">Registration Date</label>
+                                    <input class="form-control" id="registration-date" type="text" placeholder="DD/MM/YYYY">
+                                    </div>
+                                  <div class="form-group col-sm-3" style="margin-bottom: 0rem">
+                                    <label for="DrivingLicenseNo">Valid Upto</label>
+                                    <input class="form-control" id="valid-upto" type="text" placeholder="DD/MM/YYYY">
+                                    </div>
+                                    <div class="form-group row">
+                                        <div class="form-group col-sm-8">
+                                          <label for="Email">Driver's Name</label>
+                                          <input class="form-control" id="city-location" type="text" placeholder="Driver's Name (as on D/L)">
+                                        </div>
+                                        <div class="form-group col-sm-11">
+                                          <label for="mobile">Address</label>
+                                          <input class="form-control" id="pin-code" type="text" placeholder="Address (as on D/L)">
+                                        </div>
+                                      </div>       
+                                      <div class="col-6 col-sm-4 col-md-2 col-xl mb-3 mb-xl-0">
+                                        <button class="btn btn-block btn-primary" type="button">Primary</button>
+                                      </div>
+                                      <div class="form-group col-sm-11">
+                                        <button class="btn btn-sm btn-primary" type="submit">
+                                          <i class="fa fa-dot-circle-o"></i> Submit</button>
+                                        <button class="btn btn-sm btn-danger" type="reset">
+                                          <i class="fa fa-ban"></i> Reset</button>
+                                      </div>
+                        </div>                             
+                      </div>  
+                    </div>
+                    
+                  </div>
+                </div>
+              </div>
+
+              <div class="form-group row clearfix" style="clear: both;">
+                <label class="col-md-3 col-form-label" for="text-input">Text Input</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="text-input" type="text" name="text-input" placeholder="Text">
+                  <span class="help-block">This is a help text</span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="email-input">Email Input</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="email-input" type="email" name="email-input"
+                    placeholder="Enter Email">
+                  <span class="help-block">Please enter your email</span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="password-input">Password</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="password-input" type="password" name="password-input"
+                    placeholder="Password">
+                  <span class="help-block">Please enter a complex password</span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="date-input">Date Input</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="date-input" type="date" name="date-input" placeholder="date">
+                  <span class="help-block">Please enter a valid date</span>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="disabled-input">Disabled Input</label>
+                <div class="col-md-9">
+                  <input class="form-control" id="disabled-input" type="text" name="disabled-input"
+                    placeholder="Disabled" disabled="">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="textarea-input">Textarea</label>
+                <div class="col-md-9">
+                  <textarea class="form-control" id="textarea-input" name="textarea-input" rows="9"
+                    placeholder="Content.."></textarea>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="select1">Select</label>
+                <div class="col-md-9">
+                  <select class="form-control" id="select1" name="select1">
+                    <option value="0">Please select</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="select2">Select Large</label>
+                <div class="col-md-9">
+                  <select class="form-control form-control-lg" id="select2" name="select2">
+                    <option value="0">Please select</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="select3">Select Small</label>
+                <div class="col-md-9">
+                  <select class="form-control form-control-sm" id="select3" name="select3">
+                    <option value="0">Please select</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="disabledSelect">Disabled Select</label>
+                <div class="col-md-9">
+                  <select class="form-control" id="disabledSelect" disabled="">
+                    <option value="0">Please select</option>
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="multiple-select">Multiple select</label>
+                <div class="col-md-9">
+                  <select class="form-control" id="multiple-select" name="multiple-select" size="5" multiple="">
+                    <option value="1">Option #1</option>
+                    <option value="2">Option #2</option>
+                    <option value="3">Option #3</option>
+                    <option value="4">Option #4</option>
+                    <option value="5">Option #5</option>
+                    <option value="6">Option #6</option>
+                    <option value="7">Option #7</option>
+                    <option value="8">Option #8</option>
+                    <option value="9">Option #9</option>
+                    <option value="10">Option #10</option>
+                  </select>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label">Radios</label>
+                <div class="col-md-9 col-form-label">
+                  <div class="form-check">
+                    <input class="form-check-input" id="radio1" type="radio" value="radio1" name="radios">
+                    <label class="form-check-label" for="radio1">Option 1</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="radio2" type="radio" value="radio2" name="radios">
+                    <label class="form-check-label" for="radio2">Option 2</label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" id="radio3" type="radio" value="radio2" name="radios">
+                    <label class="form-check-label" for="radio3">Option 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label">Inline Radios</label>
+                <div class="col-md-9 col-form-label">
+                  <div class="form-check form-check-inline mr-1">
+                    <input class="form-check-input" id="inline-radio1" type="radio" value="option1"
+                      name="inline-radios">
+                    <label class="form-check-label" for="inline-radio1">One</label>
+                  </div>
+                  <div class="form-check form-check-inline mr-1">
+                    <input class="form-check-input" id="inline-radio2" type="radio" value="option2"
+                      name="inline-radios">
+                    <label class="form-check-label" for="inline-radio2">Two</label>
+                  </div>
+                  <div class="form-check form-check-inline mr-1">
+                    <input class="form-check-input" id="inline-radio3" type="radio" value="option3"
+                      name="inline-radios">
+                    <label class="form-check-label" for="inline-radio3">Three</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label">Checkboxes</label>
+                <div class="col-md-9 col-form-label">
+                  <div class="form-check checkbox">
+                    <input class="form-check-input" id="check1" type="checkbox" value="">
+                    <label class="form-check-label" for="check1">Option 1</label>
+                  </div>
+                  <div class="form-check checkbox">
+                    <input class="form-check-input" id="check2" type="checkbox" value="">
+                    <label class="form-check-label" for="check2">Option 2</label>
+                  </div>
+                  <div class="form-check checkbox">
+                    <input class="form-check-input" id="check3" type="checkbox" value="">
+                    <label class="form-check-label" for="check3">Option 3</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label">Inline Checkboxes</label>
+                <div class="col-md-9 col-form-label">
+                  <div class="form-check form-check-inline mr-1">
+                    <input class="form-check-input" id="inline-checkbox1" type="checkbox" value="check1">
+                    <label class="form-check-label" for="inline-checkbox1">One</label>
+                  </div>
+                  <div class="form-check form-check-inline mr-1">
+                    <input class="form-check-input" id="inline-checkbox2" type="checkbox" value="check2">
+                    <label class="form-check-label" for="inline-checkbox2">Two</label>
+                  </div>
+                  <div class="form-check form-check-inline mr-1">
+                    <input class="form-check-input" id="inline-checkbox3" type="checkbox" value="check3">
+                    <label class="form-check-label" for="inline-checkbox3">Three</label>
+                  </div>
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="file-input">File input</label>
+                <div class="col-md-9">
+                  <input id="file-input" type="file" name="file-input">
+                </div>
+              </div>
+              <div class="form-group row">
+                <label class="col-md-3 col-form-label" for="file-multiple-input">Multiple File input</label>
+                <div class="col-md-9">
+                  <input id="file-multiple-input" type="file" name="file-multiple-input" multiple="">
+                </div>
+              </div>
+
+              </form>
+            </div>
+            <div class="card-footer">
+              <button class="btn btn-sm btn-primary" type="submit">
+                <i class="fa fa-dot-circle-o"></i> Submit</button>
+              <button class="btn btn-sm btn-danger" type="reset">
+                <i class="fa fa-ban"></i> Reset</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+
+      <div class="container-fluid">
+        <div class="animated fadeIn">
+          <div class="card">
+            <div class="card-header">Headings</div>
+            <div class="card-body">
+              <p>Documentation and examples for Bootstrap typography, including global settings, headings, body text,
+                lists, and more.</p>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Heading</th>
+                    <th>Example</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>
+                      <p>
+                        <code class="highlighter-rouge">&lt;h1&gt;&lt;/h1&gt;</code>
+                      </p>
+                    </td>
+                    <td>
+                      <span class="h1">h1. Bootstrap heading</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>
+                        <code class="highlighter-rouge">&lt;h2&gt;&lt;/h2&gt;</code>
+                      </p>
+                    </td>
+                    <td>
+                      <span class="h2">h2. Bootstrap heading</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>
+                        <code class="highlighter-rouge">&lt;h3&gt;&lt;/h3&gt;</code>
+                      </p>
+                    </td>
+                    <td>
+                      <span class="h3">h3. Bootstrap heading</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>
+                        <code class="highlighter-rouge">&lt;h4&gt;&lt;/h4&gt;</code>
+                      </p>
+                    </td>
+                    <td>
+                      <span class="h4">h4. Bootstrap heading</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>
+                        <code class="highlighter-rouge">&lt;h5&gt;&lt;/h5&gt;</code>
+                      </p>
+                    </td>
+                    <td>
+                      <span class="h5">h5. Bootstrap heading</span>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td>
+                      <p>
+                        <code class="highlighter-rouge">&lt;h6&gt;&lt;/h6&gt;</code>
+                      </p>
+                    </td>
+                    <td>
+                      <span class="h6">h6. Bootstrap heading</span>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Headings</div>
+            <div class="card-body">
+              <p>
+                <code class="highlighter-rouge">.h1</code> through
+                <code class="highlighter-rouge">.h6</code> classes are also available, for when you want to match the
+                font styling of a heading but cannot use the associated HTML element.</p>
+              <div class="bd-example">
+                <p class="h1">h1. Bootstrap heading</p>
+                <p class="h2">h2. Bootstrap heading</p>
+                <p class="h3">h3. Bootstrap heading</p>
+                <p class="h4">h4. Bootstrap heading</p>
+                <p class="h5">h5. Bootstrap heading</p>
+                <p class="h6">h6. Bootstrap heading</p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Display headings</div>
+            <div class="card-body">
+              <p>Traditional heading elements are designed to work best in the meat of your page content. When you need
+                a heading to stand out, consider using a
+                <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
+              <div class="bd-example bd-example-type">
+                <table class="table">
+                  <tbody>
+                    <tr>
+                      <td>
+                        <span class="display-1">Display 1</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="display-2">Display 2</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="display-3">Display 3</span>
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>
+                        <span class="display-4">Display 4</span>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Inline text elements</div>
+            <div class="card-body">
+              <p>Traditional heading elements are designed to work best in the meat of your page content. When you need
+                a heading to stand out, consider using a
+                <strong>display heading</strong>—a larger, slightly more opinionated heading style.</p>
+              <div class="bd-example">
+                <p>You can use the mark tag to
+                  <mark>highlight</mark> text.
+                </p>
+                <p>
+                  <del>This line of text is meant to be treated as deleted text.</del>
+                </p>
+                <p>
+                  <s>This line of text is meant to be treated as no longer accurate.</s>
+                </p>
+                <p>
+                  <ins>This line of text is meant to be treated as an addition to the document.</ins>
+                </p>
+                <p>
+                  <u>This line of text will render as underlined</u>
+                </p>
+                <p>
+                  <small>This line of text is meant to be treated as fine print.</small>
+                </p>
+                <p>
+                  <strong>This line rendered as bold text.</strong>
+                </p>
+                <p>
+                  <em>This line rendered as italicized text.</em>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="card">
+            <div class="card-header">Description list alignment</div>
+            <div class="card-body">
+              <p>Align terms and descriptions horizontally by using our grid system’s predefined classes (or semantic
+                mixins). For longer terms, you can optionally add a
+                <code class="highlighter-rouge">.text-truncate</code> class to truncate the text with an ellipsis.</p>
+              <div class="bd-example">
+                <dl class="row">
+                  <dt class="col-sm-3">Description lists</dt>
+                  <dd class="col-sm-9">A description list is perfect for defining terms.</dd>
+                  <dt class="col-sm-3">Euismod</dt>
+                  <dd class="col-sm-9">
+                    <p>Vestibulum id ligula porta felis euismod semper eget lacinia odio sem nec elit.</p>
+                    <p>Donec id elit non mi porta gravida at eget metus.</p>
+                  </dd>
+                  <dt class="col-sm-3">Malesuada porta</dt>
+                  <dd class="col-sm-9">Etiam porta sem malesuada magna mollis euismod.</dd>
+                  <dt class="col-sm-3 text-truncate">Truncated term is truncated</dt>
+                  <dd class="col-sm-9">Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut
+                    fermentum massa justo sit amet risus.</dd>
+                  <dt class="col-sm-3">Nesting</dt>
+                  <dd class="col-sm-9">
+                    <dl class="row">
+                      <dt class="col-sm-4">Nested definition list</dt>
+                      <dd class="col-sm-8">Aenean posuere, tortor sed cursus feugiat, nunc augue blandit nunc.</dd>
+                    </dl>
+                  </dd>
+                </dl>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <aside class="aside-menu">
+      <ul class="nav nav-tabs" role="tablist">
+        <li class="nav-item">
+          <a class="nav-link active" data-toggle="tab" href="#timeline" role="tab">
+            <i class="icon-list"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#messages" role="tab">
+            <i class="icon-speech"></i>
+          </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" data-toggle="tab" href="#settings" role="tab">
+            <i class="icon-settings"></i>
+          </a>
+        </li>
+      </ul>
+      <!-- Tab panes-->
+      <div class="tab-content">
+        <div class="tab-pane active" id="timeline" role="tabpanel">
+          <div class="list-group list-group-accent">
+            <div
+              class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">
+              Today</div>
+            <div class="list-group-item list-group-item-accent-warning list-group-item-divider">
+              <div class="avatar float-right">
+                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+              </div>
+              <div>Meeting with
+                <strong>Lucas</strong>
+              </div>
+              <small class="text-muted mr-3">
+                <i class="icon-calendar"></i>  1 - 3pm</small>
+              <small class="text-muted">
+                <i class="icon-location-pin"></i>  Palo Alto, CA</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-info">
+              <div class="avatar float-right">
+                <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+              </div>
+              <div>Skype with
+                <strong>Megan</strong>
+              </div>
+              <small class="text-muted mr-3">
+                <i class="icon-calendar"></i>  4 - 5pm</small>
+              <small class="text-muted">
+                <i class="icon-social-skype"></i>  On-line</small>
+            </div>
+            <div
+              class="list-group-item list-group-item-accent-secondary bg-light text-center font-weight-bold text-muted text-uppercase small">
+              Tomorrow</div>
+            <div class="list-group-item list-group-item-accent-danger list-group-item-divider">
+              <div>New UI Project -
+                <strong>deadline</strong>
+              </div>
+              <small class="text-muted mr-3">
+                <i class="icon-calendar"></i>  10 - 11pm</small>
+              <small class="text-muted">
+                <i class="icon-home"></i>  creativeLabs HQ</small>
+              <div class="avatars-stack mt-2">
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+              </div>
+            </div>
+            <div class="list-group-item list-group-item-accent-success list-group-item-divider">
+              <div>
+                <strong>#10 Startups.Garden</strong> Meetup</div>
+              <small class="text-muted mr-3">
+                <i class="icon-calendar"></i>  1 - 3pm</small>
+              <small class="text-muted">
+                <i class="icon-location-pin"></i>  Palo Alto, CA</small>
+            </div>
+            <div class="list-group-item list-group-item-accent-primary list-group-item-divider">
+              <div>
+                <strong>Team meeting</strong>
+              </div>
+              <small class="text-muted mr-3">
+                <i class="icon-calendar"></i>  4 - 6pm</small>
+              <small class="text-muted">
+                <i class="icon-home"></i>  creativeLabs HQ</small>
+              <div class="avatars-stack mt-2">
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/2.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/3.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/4.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/5.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/6.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+                <div class="avatar avatar-xs">
+                  <img class="img-avatar" src="img/avatars/8.jpg" alt="admin@bootstrapmaster.com">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane p-3" id="messages" role="tabpanel">
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt...</small>
+          </div>
+          <hr>
+          <div class="message">
+            <div class="py-3 pb-5 mr-3 float-left">
+              <div class="avatar">
+                <img class="img-avatar" src="img/avatars/7.jpg" alt="admin@bootstrapmaster.com">
+                <span class="avatar-status badge-success"></span>
+              </div>
+            </div>
+            <div>
+              <small class="text-muted">Lukasz Holeczek</small>
+              <small class="text-muted float-right mt-1">1:52 PM</small>
+            </div>
+            <div class="text-truncate font-weight-bold">Lorem ipsum dolor sit amet</div>
+            <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+              incididunt...</small>
+          </div>
+        </div>
+        <div class="tab-pane p-3" id="settings" role="tabpanel">
+          <h6>Settings</h6>
+          <div class="aside-options">
+            <div class="clearfix mt-4">
+              <small>
+                <b>Option 1</b>
+              </small>
+              <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                <input class="switch-input" type="checkbox" checked="">
+                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div>
+              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</small>
+            </div>
+          </div>
+          <div class="aside-options">
+            <div class="clearfix mt-3">
+              <small>
+                <b>Option 2</b>
+              </small>
+              <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                <input class="switch-input" type="checkbox">
+                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+            <div>
+              <small class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor
+                incididunt ut labore et dolore magna aliqua.</small>
+            </div>
+          </div>
+          <div class="aside-options">
+            <div class="clearfix mt-3">
+              <small>
+                <b>Option 3</b>
+              </small>
+              <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                <input class="switch-input" type="checkbox">
+                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <div class="aside-options">
+            <div class="clearfix mt-3">
+              <small>
+                <b>Option 4</b>
+              </small>
+              <label class="switch switch-label switch-pill switch-success switch-sm float-right">
+                <input class="switch-input" type="checkbox" checked="">
+                <span class="switch-slider" data-checked="On" data-unchecked="Off"></span>
+              </label>
+            </div>
+          </div>
+          <hr>
+          <h6>System Utilization</h6>
+          <div class="text-uppercase mb-1 mt-4">
+            <small>
+              <b>CPU Usage</b>
+            </small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-info" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0"
+              aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">348 Processes. 1/4 Cores.</small>
+          <div class="text-uppercase mb-1 mt-2">
+            <small>
+              <b>Memory Usage</b>
+            </small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-warning" role="progressbar" style="width: 70%" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">11444GB/16384MB</small>
+          <div class="text-uppercase mb-1 mt-2">
+            <small>
+              <b>SSD 1 Usage</b>
+            </small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-danger" role="progressbar" style="width: 95%" aria-valuenow="95"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">243GB/256GB</small>
+          <div class="text-uppercase mb-1 mt-2">
+            <small>
+              <b>SSD 2 Usage</b>
+            </small>
+          </div>
+          <div class="progress progress-xs">
+            <div class="progress-bar bg-success" role="progressbar" style="width: 10%" aria-valuenow="10"
+              aria-valuemin="0" aria-valuemax="100"></div>
+          </div>
+          <small class="text-muted">25GB/256GB</small>
+        </div>
+      </div>
+    </aside>
+  </div>
+  <footer class="app-footer">
+    <div>
+      <a href="https://strike-thru.com">Strike-Thru</a>
+      <span>&copy; 2018 strike-thru Labs.</span>
+    </div>
+    <div class="ml-auto">
+      <span>Powered by</span>
+      <a href="https://strike-thru.com">Sitesh</a>
+    </div>
+  </footer>
+  <!-- CoreUI and necessary plugins-->
+  <script src="node_modules/jquery/dist/jquery.min.js"></script>
+  <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+  <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+  <script src="node_modules/pace-progress/pace.min.js"></script>
+  <script src="node_modules/perfect-scrollbar/dist/perfect-scrollbar.min.js"></script>
+  <script src="node_modules/@coreui/coreui/dist/js/coreui.min.js"></script>
+</body>
+
+</html>

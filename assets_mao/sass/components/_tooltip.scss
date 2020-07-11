@@ -1,0 +1,129 @@
+.ttip{
+    i{
+        color: $base-color-lighter;
+        font-size: 1.5rem;
+        vertical-align: text-top;
+    }
+}
+.tooltip{
+    @include font-roboto();
+    min-width: 20rem;
+    &.bs-tooltip-left{
+        .arrow{
+            &::before{
+                border-left-color: $color-tooltip-border;
+            }
+        }
+        .tooltip-inner{
+            border-right: .2rem solid $color-tooltip-border;
+        }
+    }
+    &.bs-tooltip-top{
+        margin-top: -.75rem;
+        .arrow{
+            &::before{
+                border-top-color: $color-tooltip-border;
+            }
+        }
+        .tooltip-inner{
+            border-bottom: .2rem solid $color-tooltip-border;
+        }
+    }
+    &.bs-tooltip-right{
+        padding: 0 .6rem;
+        margin-left: .75rem;
+        .arrow{
+            width: .6rem;
+            height: 1.2rem;
+            &::before{
+                border-width: .6rem .6rem .6rem 0;
+                border-right-color: $color-tooltip-border;
+            }
+        }
+        .tooltip-inner{
+            border-left: .2rem solid $color-tooltip-border;
+        }
+    }
+    &.bs-tooltip-bottom{
+        .arrow{
+            &::before{
+                border-bottom-color: $color-tooltip-border;
+            }
+        }
+        .tooltip-inner{
+            border-bottom: .2rem solid $color-tooltip-border;
+        }
+    }
+    &.show{
+        opacity: 1;
+    }
+    &-inner{
+        font-size: $base-font-size;
+        background-color: #faf8f9;
+        color: $base-color;
+        border-radius: .1rem;
+        padding: .75rem 1rem;
+        max-width: 20rem;
+        text-align: left;
+        &.validator_container{
+            border: .1rem solid #eee;
+            text-align: left;
+            h4{
+                @include title-sm();
+                //font-size: 1.6rem;
+                color: #999;
+                margin-bottom: .75rem;
+            }
+            ul{
+                li{
+                    //font-size: 1.2rem;
+                    line-height: 1.75;
+                    .icon{
+                        &_valid{
+                            margin-right: .75rem;
+                            color: $text-success;
+                            display: none;
+                        }
+                        &_invalid{
+                            margin-right: .75rem;
+                            color: #dc3545;
+                            display: inline-block;
+                        }
+                    }
+                    &.valid{
+                        .icon{
+                            &_valid{
+                                display: inline-block;
+                            }
+                            &_invalid{
+                                display: none;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.tooltip-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .form-group{
+        width: 93%;
+        display: inline-block;
+    }
+    .ttip{
+        display: inline-block;
+        font-size: 1.6rem;
+        cursor: pointer;
+        margin-left: 0;
+        margin-bottom: 1rem;
+        color: #777!important;
+    }
+}
+
+//Tooltip Bottom
+//Tooltip Right
+//Tooltip Left
+//Tooltip Top

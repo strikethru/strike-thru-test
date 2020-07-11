@@ -1,0 +1,18 @@
+.installerModal-sty{
+    h1{
+        color: $theme-tertiary;
+    }
+    .form-control {
+        font-size: 1.3rem;
+        padding: 1rem .7rem .8rem 1rem;
+    }  
+    p{
+        color: $theme-primary;
+        font-size: 1.7rem;
+        padding: 1rem 0;
+        font-weight: 600;
+     }
+     .col-form-label{
+         white-space: nowrap;
+     }
+   }

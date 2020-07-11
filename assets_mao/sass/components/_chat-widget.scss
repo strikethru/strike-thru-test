@@ -1,0 +1,61 @@
+.chat-wrap{
+    margin: 5rem 0;
+    text-align: right;
+    .popper{
+        background-color: $white;
+        border: .2rem solid $theme-primary;
+        border-radius: 50%;
+        padding: 0;
+        width: 4rem;
+        height: 4rem;
+        font-size: 2rem;;
+        color: $theme-primary;
+        cursor: pointer;
+        outline: none!important;
+    }
+    .popper-content .card{
+        width: 20rem;
+    }
+    .popover-body{
+        background-color: $border;
+        padding: 0;
+    }
+    .bxchat{
+        width: 25rem;
+        .pad{
+            padding: 5rem 1.5rem;
+        }
+        .btn{
+            color: $white;
+            border: .1rem solid $white;
+            border-radius: .1rem;
+            background-color: $theme-primary;
+            text-transform: uppercase;
+            font-size: 1.2rem;
+            &:hover{
+                background-color: #559ae8;
+                outline: none!important;
+            }
+        }
+        .head{
+            background-color: #333;
+            h2{
+                margin: 0;
+                text-align: center;
+                font-size: 1.6rem;
+                color: $white;
+                padding: .7rem;
+                font-weight: 400;
+                span{
+                    font-size: 1.3rem;
+                    font-weight: 400;
+                    color: #bbb;
+                }
+            }
+        }
+    }
+    .bs-popover-auto[x-placement^=top] .arrow::after,
+    .bs-popover-top .arrow::after{
+        border-top-color: $border;
+    }
+}

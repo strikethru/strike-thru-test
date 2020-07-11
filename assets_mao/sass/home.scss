@@ -1,0 +1,29 @@
+@import "animate/animate.scss";
+@import "abstracts/variables";
+
+@import "base/base";
+@import "components/alerts";
+
+@import "components/breadcrumb";
+@import "components/pagination";
+@import "components/datepicker";
+
+@import "layout/footer";
+
+@import "layout/header";
+@import "layout/content-panel";
+@import "layout/left-navpanel";
+
+@import "pages/home";
+@import "dashboard";
+@import "components/table";
+@import "components/preloader";
+@import "pages/notification";
+@import "pages/help";
+@import "pages/editorder";
+@import "pages/create-survey";
+
+@import "components/offcanvas";
+@import "components/stepwizard";
+@import "components/pillsnav";
+

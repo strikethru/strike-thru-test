@@ -1,0 +1,20 @@
+.static {
+  background-color: $white;
+  padding: 1.5rem;
+  width: 100%;
+  #accordion {
+    .card {
+      margin-bottom: 0.5rem;
+    }
+    .card-header {
+      border-radius: 0;
+      background: $theme-primary-soft;
+      color: $theme-primary;
+      border-bottom: 0;
+      cursor: pointer;
+      &.collapsed {
+        background: $light-grey2;
+      }
+    }
+  }
+}

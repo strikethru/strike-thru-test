@@ -1,0 +1,137 @@
+.react-bootstrap-table{
+    table{
+        table-layout: auto;
+    }
+}
+
+.table{
+    margin: 0;
+    &-common{
+        thead th,
+        tbody td{
+            border-color: $border-table;
+            padding: .75rem;
+            text-align: left;
+            overflow-wrap: break-word;
+            white-space: pre-line;
+            .btn{
+                font-size: 1.2rem;
+            }
+            &.valign-top{
+                vertical-align: top!important;
+            }
+            &.valign-middle{
+                vertical-align: middle!important;
+            }
+        }
+        thead{
+            th{
+                background-color: $bg-table-head;
+                border-width: .1rem .1rem .1rem .1rem;
+                border-color: $base-table-border;
+                vertical-align: middle;;
+                color: $base-color;
+                font-weight: 500;
+            }
+        }
+        
+        tbody td{
+            background-color: $bg-table-cell;
+            vertical-align: middle;
+            color: $base-color;
+            text-align: left;
+            p{
+                text-align: left;
+            }
+            img{
+                &.product-list-image{
+                    max-height: 6.4rem;
+                    //min-width: 6.4rem;
+                }
+            }
+            .btn{
+                padding: 0 1rem;
+            }
+            a{
+                //color: $theme-primary;
+                text-decoration: none;
+                word-break: break-word;
+                white-space: normal;
+                text-align: left;
+                // padding: 0;
+                cursor: pointer;
+                &.btn-link{
+                    padding: 0;
+                    i{
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+            p{
+                &:last-child{
+                    margin-bottom: 0;
+                }
+            }
+        }
+        &.white{
+            thead th{
+                background-color: $bg-content-title-primary;
+                color: $base-color-dark;
+                vertical-align: middle;
+            }
+            tbody td{
+                background-color: #fff;
+            }
+        }
+        &-bordered{
+            td,
+            th{
+                border-color: $base-border;
+            }
+        }
+        &.no-border{
+            thead th,
+            tbody td{
+                border: 0;
+            }
+            .table-bordered{
+                border: 0;
+            }
+        }
+
+        /* New Theme */
+        thead,
+        tbody{
+            th,
+            td{
+                background-color: #fff;
+                border-color: $base-border;
+            }
+        }
+    }
+    &.manage-orders-table-component{
+        thead{
+            th{
+                &:nth-child(1),
+                &:nth-child(2),
+                &:nth-child(3){
+                    width: 15%;
+                }
+                &:nth-child(4),
+                &:nth-child(5){
+                    width: 27.5%;
+                }
+            }
+        }
+        tbody{
+            td{
+                vertical-align: top;
+            }
+        }
+    }
+}
+
+.react-bootstrap-table{
+    // min-width: 62rem;
+    //@include box-shadow-main();
+}

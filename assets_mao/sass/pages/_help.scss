@@ -1,0 +1,128 @@
+
+.help-center{
+    margin-top: 3rem;
+    .title-wrap{
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-direction: column;
+        text-align: center;
+        padding: 0 25%;
+        margin-bottom: 1.5rem;
+        h2{
+            margin: 0;
+            text-transform: uppercase;
+        }
+        h6{
+            margin: 1.5rem 0;
+            font-size: $base-font-size;
+            color: $base-color-light;
+        }
+        .input-group{
+            .form-control{
+                padding: .75rem;
+            }
+            .btn{
+                padding: .75rem 1rem;
+                font-size: 1.6rem;
+            }
+        }
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        li{
+            list-style: none;
+            margin: 1.25%;
+            flex: 0 0 22.5%;
+            border: .1rem solid $bg-shade-secondary;
+            border-radius: .1rem;
+            background-color: $bg-shade-tertiary;
+            a{
+                padding: 1.5rem 0;
+                text-align: center;
+                display: block;
+                font-size: 1.5rem;
+                text-decoration: none;
+                cursor: pointer;
+                i{
+                    margin: 1.5rem 0;
+                    font-size: 5rem;
+                    display: block;
+                    color: $base-color;
+                    opacity: .5;
+                    &:hover{
+                        text-decoration: none;
+                    }
+                }
+                label{
+                    color: $base-color;
+                }
+            }
+            &:hover{
+                background-color: #fff;
+                i{
+                    opacity: .75;
+                }
+                @include pulse(
+                    $duration: .5s,
+                    $delay: .2s,
+                    $function: ease, 
+                );
+                }
+        }
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) {
+
+}
+
+// Extra small devices (portrait phones, less than 736px)
+@media (max-width: 736.98px) {
+    .help-center{
+        margin-top: 0;
+        ul{
+            li{
+                a{
+                    padding: 1rem 0;
+                    i{
+                        margin: 1rem 0;
+                        font-size: 4rem;
+                    }
+                    label{
+                        margin: 0;
+                        height: 4.4rem;
+                        @include flex-center();
+                    }
+                }
+            }
+        }
+    }
+}
+
+// Extra small devices (portrait phones, less than 414px)
+@media (max-width: 414.98px) {
+    .help-center{
+        .title-wrap{
+            padding: 0;
+            margin-top: 1.5rem;
+        }
+        ul{
+            flex-wrap: wrap;
+            li{
+                flex: 1;
+                padding: .5rem;
+                margin-bottom: .5rem;
+                &:nth-child(even){
+                    margin-left: .5rem;
+                }
+            }
+        }
+    }
+}

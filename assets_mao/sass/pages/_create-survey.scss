@@ -1,0 +1,29 @@
+.create-survey{
+    .email-sec{
+        p{
+            i{
+                font-size: 5.6rem;
+                color: $lightredtext;
+                opacity: .3;
+            }
+        }
+        form{
+            font-size: 1.8rem;
+            .form-control{
+                font-size: 1.8rem;
+                line-height: 4rem;
+            }
+        }
+    }
+    .professionaldetails-container,.accorion-sec{
+        label{
+            font-size: 1.4rem;
+        }
+    }
+    textarea{
+        border-color: #e1e1e1 !important;
+    }
+    .invalid-feedback{
+        display: block;
+    }
+} 

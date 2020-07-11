@@ -1,0 +1,180 @@
+@media (min-width: 991px) {
+    .DeptNavDropdown-Wrap{
+        display: none;
+        position: absolute;
+        left: 100%;
+        background: #fff;
+        top: 0px;
+        bottom: 0;
+        width: 100%;
+        opacity: 0;
+
+        @include box-shadow(0px, 3px, 3px, $base-color, $inset: false);
+        .DeptNavDropdown-grid{
+            display: flex;
+            padding:0rem;
+            .DeptNavDropdown-gridSection{
+                border-bottom: 1px solid $drop-dwn-border;
+               
+                .DeptNavDropdown-linkTitle{
+                    font-size: 1.5rem;
+                    color:$theme-quaternary;                 
+                    display: block;
+                    padding: .8rem 1.5rem;
+                    font-weight: 500;
+                    white-space: nowrap;
+                    text-overflow: ellipsis;
+                    overflow: hidden;
+                    position: relative;
+                    
+                    &:hover{
+                        text-decoration: none;
+                        color: $white;
+                        @include horizontal-gradient(darken($theme-tertiary,7%), $theme-tertiary);  
+                    }
+                   
+                    @include breakpoint-down(lg){
+                        font-size: 1.3rem;
+                    }
+                }
+                ul{            
+                    list-style-type: none;
+                    li{
+                      
+                     
+                        a{
+                            font-size: 1.3rem;
+                            color:$theme-primary-gray;
+                            display: block;
+                            padding: .8rem 1.5rem;
+                            cursor: pointer;
+                            line-height: 1rem;
+                           
+                            font-weight: 400;
+                            &:hover{
+                                color: lighten($white, 0%);
+                                @include horizontal-gradient(darken($theme-tertiary,7%), $theme-tertiary);  
+                            }
+                            @include breakpoint-down(lg){
+                                font-size: 1.3rem;
+                            }
+                        }
+                    }
+                }
+            }
+            .DeptNavDropdown-gridItem{
+                padding: 0rem;
+                min-width: 30rem;
+                max-width: 30rem;
+                overflow: hidden;
+                @include breakpoint-down(lg){
+                    min-width: 24rem;
+                }
+              
+                       
+              
+            }
+            
+        }
+    }
+    .main-nav {
+        .dropdown{     
+            &.level2{
+                &:hover{
+                        .DeptNavDropdown-Wrap{                             
+                                display: block;
+                                width: auto; 
+                                left: 100%;                            
+                                opacity: 1;
+                                    }
+                                    
+                                }
+                        }
+                        .level1-block{                         
+                            &:after{
+                            height: 22rem;
+                            background: url(../images/tile-laminate-dropdown.png) no-repeat bottom left $offwhite;
+                            content: ("");
+                            display: block;
+                            width: 100%;
+                            position:absolute;
+                            bottom: 0;
+                            }
+                                     
+                        }
+        }
+    }
+}
+.main-nav .dropdown.level1 .nav-link:hover + .level1-block .level2:first-child{
+    .nav-link{  
+        background-color: $theme-tertiary; 
+        color: $white;
+        @include horizontal-gradient(darken($theme-tertiary,7%), $theme-tertiary);  
+    }
+    .DeptNavDropdown-Wrap{
+        display: block;
+        opacity: 1;
+        left: 100%;
+        transition: all 0.9s ease 0s;
+    }
+    
+} 
+
+
+@media (max-width: 991px) {
+        .DeptNavDropdown-Wrap {
+            background-color: $white;
+            padding: 0 1rem;
+            .DeptNavDropdown-gridItem{
+                .DeptNavDropdown-gridSection{
+                    padding-bottom: 1rem;
+                    border-bottom: 1px solid $border;
+                    background: $offwhite;
+                    margin-left: -10px;
+                    margin-right: -10px;
+                    padding-left: 10px;
+                    padding-right: 10px;
+                    ul{
+                        padding-bottom: 0 !important;
+                        li{
+                            list-style-type: none;
+                            a{
+                                font-weight: 400 !important;
+                                padding: 0.7rem 0rem !important;
+                                cursor: pointer;
+                                display: block;
+                                font-size: 1.3rem;
+                                color: $litegrey-color;
+                                overflow: hidden;
+                                white-space: nowrap;
+                                text-overflow: ellipsis;
+                                &:hover{
+                                    text-decoration: underline;
+                                }
+                            }
+                        }
+                    }
+                }
+                .DeptNavDropdown-linkTitle{
+                    font-weight: 400 !important;
+                    padding: 0.7rem 0rem !important;
+                    cursor: pointer;
+                    display: block;
+                    color: $theme-quaternary;
+                    font-size: 1.3rem;
+                    position: relative;
+                    &:hover{
+                        text-decoration: underline;
+                    }
+                    i.noc-drop{
+                        position: absolute;
+                        right: 0rem;
+                        top: 1rem;
+                    }
+                 
+
+                } 
+        }
+    }
+}
+

@@ -1,0 +1,73 @@
+.pg{
+    &-profile{
+        padding: 0;
+        fieldset{
+            &:first-child{
+                margin-bottom: 1rem;
+            }
+        }
+        h2{
+            margin: 0 0 1.5rem 0;
+            padding-bottom: .5rem;
+            border-bottom: .1rem solid #ebebeb;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-weight: 400;
+            .form-group{
+                display: flex;
+                justify-content: flex-end;
+                align-items: center;
+                margin: 0;
+                label{
+                    margin: 0;
+                    font-size: $base-font-size;
+                    width: 25rem;
+                    padding-right: 1rem;
+                    text-align: right;
+                }
+                select{
+                    font-size: $base-font-size;
+                }
+            }
+        }
+        hr{
+            margin-top: 2.5rem;
+            margin-bottom: 3rem;
+        }
+        .button-label{
+            display: block;
+            visibility: hidden;
+            margin-bottom: .5rem;
+        }
+        .btn-panel{
+            margin: 0;
+        }
+    }
+}
+
+.profile-actions{
+    position: absolute;
+    right: 0;
+    top: -4.55rem;
+}
+
+.pg-profile{
+    .form-group{
+        &.countrycode{
+            select.form-control{
+                width: 25%;
+                border-right: 0rem solid $base-border;
+                height: 3.2rem !important;
+                padding: 0;
+            }
+            input.form-control{
+                width: 75%;
+                flex: auto;
+            }
+            .invalid-feedback{
+                width: 100%;
+            }
+        }
+    }
+}

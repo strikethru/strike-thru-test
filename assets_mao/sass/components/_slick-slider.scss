@@ -1,0 +1,104 @@
+@import "../css/slick-carousel.css";
+/* Custom - Slick Carousel */
+.product-multi-carousel.gallery,
+.product-multi-carousel{
+    //    max-width: 514px;
+    //    width: auto!important;
+    .slick-list{
+        margin: 0 3.5rem;
+        padding: 0 0 1.5rem 0;
+    }
+    .slick-prev{
+        left: 0;
+    }
+    .slick-next{
+        right: 0;
+    }
+    .slick-prev,
+    .slick-next{
+        background-color: transparent!important;
+        width: 3rem;
+        height: 3rem;
+        &::before{
+            color: #ccc;
+            font-size: 3rem;
+        }
+        &:hover,
+        &:focus{
+
+        }
+    }
+}
+.product-multi-carousel.gallery{
+    padding-bottom: 0;
+    .carousel-item{
+        text-align: center;
+        height: 30rem;
+        img{
+            max-width: 100%;
+            max-height: 100%;
+            border: .1rem solid $base-border;
+            padding: .1rem;
+        }
+    }
+    .slick-list{
+        margin: 1.5rem 4rem 0 4rem;
+        padding: 0;
+    }
+    .slick-slide{
+        margin: 0;
+        img{
+            height: 6.4rem;
+            //            width: 100%!important;
+            border: .5rem solid #fff;
+            border-width: 0 1rem;
+            margin: 0 auto;
+            cursor: pointer;
+        }
+    }
+}
+.product-multi-carousel{
+    .slick-slide{
+        .items{
+            background-color: #fff;
+            border: .1rem solid #ebebeb;
+            margin: 0 1rem;
+            &:hover{
+                .bx-quick-panel{
+                    .btn{
+                        opacity: 1;
+                    }
+                }
+            }
+            .bximg{
+                position: relative;
+
+            }
+            .bx-quick-panel{
+                .btn{
+                    opacity: 0;
+                    transition: all .25s;
+                    border: .1rem solid #fff!important;
+                    font-size: 1.1rem;
+                    position: absolute;
+                    top: 45%;
+                    &-primary{
+                        left: 25%;
+                        margin-left: 1rem;
+                    }
+                    &-secondary{
+                        right:0;
+                        margin-right: 1rem;
+                    }
+                }
+                &.comparable{
+                    .btn{
+                        &-primary{
+                            left: 0;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

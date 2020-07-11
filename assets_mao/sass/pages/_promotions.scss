@@ -1,0 +1,97 @@
+.add-price-promotion,
+.add-promotion-group{
+    //padding: 0;
+    h3{
+        margin-bottom: 1rem;
+        font-weight: 400;
+    }
+    hr{
+        margin: 1rem 0 1.5rem 0;
+    }
+    .fa-calendar-alt{
+        font-size: 1.8rem;
+        vertical-align: middle;
+    }
+    .btn-panel{
+        margin-left: 0;
+    }
+}
+.add-promotion-group{
+    .table{
+        margin-bottom: 1rem;
+    }
+    .card{
+        &-body{
+            border-width: .1rem!important;
+        }
+    }
+    .promotion{
+        &-definition,
+        &-update-sku{
+            padding-bottom: 1.5rem!important;
+        }
+    }
+}
+.btn-panel{
+    &.bottom{
+        &.left{
+            .btn{
+                margin-right: 1rem;
+                margin-left: 0;
+            }
+        }
+    }
+}
+
+.pg-couponpromotions{
+    .manage-products{
+        .accordion{
+            .card-body{
+                border-width: .1rem;
+                padding: 1rem 1rem 0 1rem;
+                .table-common{
+                    margin-bottom: 1rem;
+                }
+            }
+        }
+    }
+}
+.pg-pricepromotions{
+    .filter-head{
+        margin-top: 0;
+    }
+    td{
+        img{
+            width: 6.4rem;
+            border: .1rem solid $base-border;
+        }
+        .btn{
+            padding: 0 .5rem!important;
+        }
+    }
+}
+.pg-shippingpromotions{
+    .manage-products .nav-pills{
+        margin-top: 0;
+    }
+}
+
+.add-price-promotion{
+    .btn-link{
+        cursor: text!important;
+        text-decoration: none;
+        font-weight: 400;
+    }
+}
+
+.promotion{
+    &-title{
+        font-size: 1.4rem;
+    }
+}
+
+.btn-content-rite{
+    .btn{
+        margin-right: 1rem;
+    }
+}

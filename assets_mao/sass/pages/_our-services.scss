@@ -1,0 +1,88 @@
+.our-services {
+  h1 {
+    color: $theme-quaternary;
+    @include breakpoint-down(sm){
+      font-size: 2rem;
+    }
+  }
+  h3 {
+    font-size: 1.692rem;
+    font-weight: 300;
+    line-height: 1.33;
+    color: $litegrey-color;
+  }
+  h4 {
+    font-size: 16px;
+    line-height: 1.5;
+    color: $dark-grey;
+  }
+  .our-main-services {
+    @include breakpoint-down(sm){
+      text-align: center;
+    }
+    i {
+      font-size: 7rem;
+      &:before {
+        color: $theme-primary;
+      }
+    }
+    p {
+      font-size: 1.3rem;
+      line-height: 1.29;
+      color: $litegrey-color;
+    }
+    a {
+      text-decoration: underline;
+      color: $tipslink;
+      &:hover, &:active, &:visited {
+        text-decoration: none;
+        color: $tipslink;
+      }
+    }
+    .img-container-services {
+      width: 8rem;
+      height: 8rem;
+      @include breakpoint-down(sm){
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+  .installation-banner {
+    margin-top: 7rem;
+    .installation-services-text {
+      display: none;
+      @include breakpoint-down(sm){
+        display: block;
+        margin: 0 auto;
+        max-width: 37.8rem;
+        background-color: $offwhite;
+        padding: 3rem 2rem;
+        text-align: left;
+        h1 {
+          font-size: 2rem;
+          color: $theme-quaternary;
+          font-weight: 500;
+        }
+        p {
+          font-size: 1.5rem;
+          color: $theme-quaternary;
+          font-weight: 500;
+          max-width: 70%;
+        }
+        span {
+          font-size: 1.3rem;
+          color: $theme-quaternary;
+          i {
+            margin-left: 1rem;
+            color: $theme-tertiary;
+            font-size: 1.5rem;
+          }
+        }
+      }
+    }
+  }
+}
+
